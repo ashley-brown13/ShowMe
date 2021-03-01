@@ -1,1 +1,1 @@
-# good-shows
+# goodShows
