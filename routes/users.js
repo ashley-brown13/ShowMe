@@ -26,6 +26,18 @@ router.post('/users/signup', csrfProtection, signUpValidators, asyncHandler(asyn
     const hashedPassword = await bcrypt.hash(password, 10);
     user.hashedPassword = hashedPassword;
     await user.save();
+    await db.ShowShelf.create({
+      title: "Want to Watch",
+      userId: user.id
+    })
+    await db.ShowShelf.create({
+      title: "Watching",
+      userId: user.id
+    })
+    await db.ShowShelf.create({
+      title: "Watched",
+      userId: user.id
+    })
     loginUser(req, res, user);
     return req.session.save((error) => {
       if(error){
