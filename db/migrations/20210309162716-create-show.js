@@ -17,7 +17,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.TEXT
       },
-      yearRealeased: {
+      yearReleased: {
         allowNull: false,
         type: Sequelize.INTEGER
       },

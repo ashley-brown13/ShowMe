@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT,
       allowNull: false
     },
-    yearRealeased: {
+    yearReleased: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
