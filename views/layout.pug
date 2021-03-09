@@ -4,6 +4,12 @@ html
       block head
         title="ShowMe"
         link(rel='stylesheet' href='/stylesheets/reset.css')
-  body
-
+  body 
+    nav
+      a(href='/') ShowMe
+      div
+        form(action='/search' role='search')
+          input(type='hidden' name='_csrf' value=csrfToken)
+          input(type='text' placeholder='Search Shows')
+          button(type='submit') Search
     block content
