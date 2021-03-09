@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   ShowShelf.associate = function(models) {
     ShowShelf.belongsTo(models.User, { foreignKey: 'userId' })
+    ShowShelf.belongsToMany(models.Show, {foreignKey: 'showShelveId', through: 'ShowShelvesShow', otherKey: 'showId' })
   };
   return ShowShelf;
 };

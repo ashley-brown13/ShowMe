@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false}
   }, {});
   Rating.associate = function(models) {
-    // associations can be defined here
     Rating.belongsTo(models.Show, {foreignKey: 'showId'}),
     Rating.belongsTo(models.User, {foreignKey: 'userId'})
 
