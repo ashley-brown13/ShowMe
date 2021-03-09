@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  table
+    thead
+      tr
+        th Poster
+        th Title
+        th Rating
+        th Review
+  tbody
+    each thing in things
+      tr
+        td= thing.property1
+        td= thing.property2

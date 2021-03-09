@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      showShelveId: {
+      showShelfId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {model: 'ShowShelves'}

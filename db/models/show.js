@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
   Show.associate = function(models) {
     Show.hasMany(models.Rating, {foreignKey: 'showId'})
     Show.hasMany(models.Review, {foreignKey: 'showId'})
-    Show.belongsToMany(models.ShowShelf, {foreignKey: 'showId', through: "ShowShelvesShow", otherKey:'showShelveId'})
+    Show.belongsToMany(models.ShowShelf, {foreignKey: 'showId', through: "ShowShelvesShow", otherKey:'showShelfId'})
   };
   return Show;
 };

@@ -9,10 +9,10 @@ const { loginUser, logoutUser } = require('../auth')
 
 /* GET home page. */
 router.get('/', asyncHandler(async(req, res) => {
-  const shows = await db.Show.findAll({ 
+  const shows = await db.Show.findAll({
     include: {model: db.Rating,
     order: ['rating', 'DESC'],
-    limit: 10} 
+    limit: 10}
   });
 
   const loggedUser = req.session.auth.userId;
@@ -22,10 +22,10 @@ router.get('/', asyncHandler(async(req, res) => {
     const shelf = await db.ShowShelf.findByPk(loggedUser);
 
   }
-  
+
 
   // console.log(shows);
-  
+
   res.render('index', { title: 'ShowMe', shows , user});
 }));
 
