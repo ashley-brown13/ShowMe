@@ -1,0 +1,17 @@
+extends layout
+block content
+  div
+    img(src=show.imageURL)
+  div
+    h1= show.title
+  div
+    h2 Number of seasons: #{show.numberOfSeasons}
+    h3 Year released: #{show.yearRealeased}
+  div
+    p= show.synopsis
+  div
+    each review in reviews
+      div(id=review.userId)
+        h1=review.title
+        h2=review.User.fullName
+        p=review.comment
