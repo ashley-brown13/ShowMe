@@ -12,6 +12,9 @@ block content
   div
     each review in reviews
       div(id=review.userId)
-        h1=review.title
-        h2=review.User.fullName
+        h3=review.title
+        h4=review.User.fullName
         p=review.comment
+        if user  && user.id  === review.userId
+          a(href=`/reviews/#{review.id}`) Delete
+          a(href=`/reviews/#{review.id}`) Edit 
