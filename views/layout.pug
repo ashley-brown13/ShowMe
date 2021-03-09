@@ -5,4 +5,11 @@ html
         title="Express Starter App"
         link(rel='stylesheet' href='/stylesheets/reset.css')
   body
+    nav
+      a(href='/') ShowMe
+      div
+        form(action='/search' role='search')
+          input(type='hidden' name='_csrf' value=csrfToken)
+          input(type='text' placeholder='Search Shows')
+          button(type='submit') Search
     block content
