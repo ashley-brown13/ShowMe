@@ -9,17 +9,33 @@ const { loginUser, logoutUser } = require('../auth')
 
 /* GET home page. */
 router.get('/', asyncHandler(async(req, res) => {
+  const shows = await db.Show.findAll({ 
+    // include: {model: db.Rating,
+    // order: ['rating', 'DESC'],
+    // limit: 10} 
+    limit: 10
+
   const shows = await db.Show.findAll({
     include: {model: db.Rating,
     order: ['rating', 'DESC'],
     limit: 10}
   });
 
+
+
+
+let user = null;
+let shelves;
+if (req.session.auth){
   const loggedUser = req.session.auth.userId;
-  const user = await db.User.findByPk(loggedUser)
-  console.log(loggedUser)
-  if (loggedUser){
-    const shelf = await db.ShowShelf.findByPk(loggedUser);
+  user = await db.User.findByPk(loggedUser)
+  shelves = await db.ShowShelf.findAll({
+    where: { userId: loggedUser }
+})}
+  // console.log(shelves)
+  res.render('index', { title: 'ShowMe', shows , user, shelves});
+}))
+
 
   }
 
@@ -28,5 +44,6 @@ router.get('/', asyncHandler(async(req, res) => {
 
   res.render('index', { title: 'ShowMe', shows , user});
 }));
+
 
 module.exports = router;

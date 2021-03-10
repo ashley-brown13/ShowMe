@@ -13,10 +13,8 @@ block content
     each show in shows
       div 
         img(src=show.imageURL)
-        span= show.title
-        span= show.Rating.rating 
-        if user 
-          select(name="") 
-            option(value="") Want to Watch 
-            option(value="") Watching
-            option(value="") Watched
+        div= show.title
+        if user
+          select(name="showShelves") 
+            each shelf in shelves
+              option(value=shelf.id)= shelf.title
