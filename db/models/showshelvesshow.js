@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const ShowShelvesShow = sequelize.define('ShowShelvesShow', {
-    showShelveId: {
+    showShelfId: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {});
   ShowShelvesShow.associate = function(models) {
-    // associations can be defined here
+
   };
   return ShowShelvesShow;
 };
