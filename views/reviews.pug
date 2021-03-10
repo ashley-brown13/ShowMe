@@ -8,13 +8,13 @@ block content
     h1= review.Show.title
   if user && user.id === review.userId
     div(id=review.showId)
-      form()
+      form(class="update-review" id=review.id)
         +field("Title", "title", review.title)
         div
           label(for="Review") User Review:
           textArea(id="comment" name="comment")=review.comment
         div(id=review.showId)
-          button(type="submit" class='update-review' id=review.id) Update Review
+          button(type="submit" id=review.id) Update Review
       button(class="delete-review" id=review.id) Delete Review
   else
     div

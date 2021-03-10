@@ -14,14 +14,14 @@ deleteButtons.forEach( deleteButton => {
   });
 });
 
-const updateButtons = document.querySelectorAll('.upate-review')
+const updateForm = document.querySelector('.update-review')
 
-updateButtons.forEach(updateButton => {
-  updateButton.addEventListener('submit', async(e) => {
+  updateForm.addEventListener('submit', async(e) => {
     e.preventDefault();
     const reviewId = e.target.id;
-    const showId = e.parentElement.id;
-    const formData = new FormData(form);
+    console.log(updateForm.parentElement.id)
+    const showId = updateForm.parentElement.id;
+    const formData = new FormData(updateForm);
     const title = formData.get('title');
     const comment = formData.get('comment');
     const body = {title, comment}
@@ -31,14 +31,13 @@ updateButtons.forEach(updateButton => {
         body: JSON.stringify(body),
         headers: {'Content-Type': 'application/json'}
       })
-      console.log(res)
-      // if(res.success === 'success'){
-        // throw res
+      // need to come back and finish error handling section
+      // if(res.success !== 'success'){
+      //   throw res
       // }
       window.location.href = `/shows/${showId}`
     }catch(e) {
       console.error(e)
     }
 
-  })
-})
+  });
