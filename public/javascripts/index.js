@@ -8,12 +8,12 @@ window.addEventListener("load", (event)=>{
     showShelfSubmit.forEach(button => {
         button.addEventListener('click', async (event) => {
             const showShelfOption = document.querySelectorAll('.showShelfOption').value;
-            const showShelvesId = event.target.previousSibling.value;
+            const showShelfId = event.target.previousSibling.value;
             const userId = event.target.value;
             const showId = event.target.id;
-            const body = { showShelvesId, showId }
+            const body = { showShelfId, showId, }
             try {
-                const res = await fetch('http://localhost:8080/showshelves', {
+                const res = await fetch(`/api/showshelves/${showShelfId}`, {
                     method: "POST",
                     body: JSON.stringify(body),
                     headers: {
