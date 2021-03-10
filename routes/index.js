@@ -13,16 +13,8 @@ router.get('/', asyncHandler(async(req, res) => {
     // include: {model: db.Rating,
     // order: ['rating', 'DESC'],
     // limit: 10} 
-    limit: 10
-
-  const shows = await db.Show.findAll({
-    include: {model: db.Rating,
-    order: ['rating', 'DESC'],
-    limit: 10}
+    limit: 10  
   });
-
-
-
 
 let user = null;
 let shelves;
@@ -37,13 +29,6 @@ if (req.session.auth){
 }))
 
 
-  }
-
-
-  // console.log(shows);
-
-  res.render('index', { title: 'ShowMe', shows , user});
-}));
 
 
 module.exports = router;
