@@ -1,9 +1,23 @@
 extends layout
+append head
+  script(src='/javascripts/show.js' type='module')
+include utils
 block content
   img(src=`${review.Show.imageURL}`)
   div
     h1= review.Show.title
-  div
-    h2= review.title
-  div
-    p= review.comment
+  if user && user.id === review.userId
+    div(id=review.showId)
+      form(action="/reviews/:id(\\d+)" method="post")
+        +field("Title", "title", review.title)
+        div
+          label(for="Review") User Review:
+          textArea(id="comment" name="comment")=review.comment
+        div
+          button(type="submit") Update Review
+      button(class="delete-review" id=review.id) Delete Review
+  else
+    div
+      h2=review.title
+    div
+      p=review.comment

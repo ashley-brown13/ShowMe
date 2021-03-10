@@ -20,5 +20,9 @@ router.get('/reviews/:id(\\d+)', asyncHandler(async (req, res) => {
   res.render('reviews', { review })
 }))
 
+router.post('/reviews/:id(\\d+)', asyncHandler(async (req, res) => {
+
+}))
+
 
 module.exports = router
