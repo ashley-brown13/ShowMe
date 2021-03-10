@@ -1,0 +1,22 @@
+extends layout
+include utils
+block content
+  img(src=show.imageURL)
+  div
+    h1= show.title
+  div
+    h2 Number of seasons: #{show.numberOfSeasons}
+    h3 Year released: #{show.yearRealeased}
+  div
+    p= show.synopsis
+  +validationErrorSummary(errors)
+  if user 
+    form(method='post' action=`/shows/${show.id}/reviews`)
+      input(type='hidden' name='_csrf' value=csrfToken)
+      +field('Title', 'title', review.title, text, 'Title your review', required)
+      div
+        label(for='comment') Review:
+        textArea(id='comment' name='comment' placeholder='Write your review' required)=review.comment
+      div
+        button(type='submit') Add review!
+      
