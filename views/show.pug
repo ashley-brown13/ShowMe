@@ -11,7 +11,7 @@ block content
     p= show.synopsis
   //- if show.youtubeVideoURL!== null  && show.youtubeVideoURL !== 'autoplay=1&mute=1'
   div
-    <iframe width="420" height="300" src='https://www.youtube.com/embed/kAphgHhlteM?autoplay=1&mute=1' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
   div
     each review in reviews
       div(id=review.userId)
