@@ -1,5 +1,11 @@
 extends layout
 
+append head
+  //- add page specific styles by appending to the head
+  link(rel="stylesheet" href="/stylesheets/index.css")
+  //- add page specific js
+  script(src="/javascripts/add-showshelves.js" type="module" defer)
+
 block content
   table
     thead
@@ -11,11 +17,9 @@ block content
       each showShelf in showShelves
         tr
           td= showShelf.title
-          td: button(type="button") Edit
           td: button(type="button") Delete
   div
-    form(action='/showshelves' method='post')
-      input(type='hidden' name='_csrf' value=csrfToken)
+    form(action='/showShelves' method='post')
       label(for="shelfAdd") Want to add a new shelf?
-      input(type='text' name="shelfAdd" placeholder='Title of Shelf')
-      button(type='submit') Add
+      input(type='text' name="title" id="shelfAdd" placeholder='Title of Shelf')
+      button(type='submit' id ="add-showshelf") Add
