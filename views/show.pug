@@ -16,5 +16,7 @@ block content
         h4=review.User.fullName
         p=review.comment
         if user  && user.id  === review.userId
-          a(href=`/reviews/#{review.id}`) Delete
-          a(href=`/reviews/#{review.id}`) Edit 
+          div
+            a(href=`/reviews/delete/${review.id}`) Delete
+          div  
+            a(href=`/reviews/${review.id}`) Edit

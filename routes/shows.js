@@ -13,9 +13,18 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   res.render('show', {title: show.title, show, reviews})
 }))
 
-router.delete('/review/:id(\\d+)', asyncHandler(async (req, res) => {
+router.get('/reviews/:id(\\d+)', asyncHandler(async (req, res) => {
+  const review = await db.Review.findByPk(req.params.id, {
+    include: db.Show
+  });
+  res.render('reviews', { review })
+}))
+
+router.delete('/reviews/delete/:id(\\d+)', asyncHandler(async (req, res) => {
   const review = await db.Review.findByPk(req.params.id);
-  const showId = parseInt(review.showId, 10)
+  console.log(review)
+  const showId = await parseInt(review.showId, 10)
+  await review.destroy();
   res.redirect(`/shows/${showId}`)
 }));
 
