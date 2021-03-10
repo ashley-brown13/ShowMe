@@ -19,4 +19,4 @@ block content
         p=review.comment
         if user  && user.id  === review.userId
           button(class="delete-review" id=review.id) Delete
-          button(class="edit-review") Edit
+          button(class="edit-review" id=review.id) Edit
