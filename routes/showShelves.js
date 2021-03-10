@@ -14,12 +14,11 @@ router.get('/showshelves', asyncHandler(async(req, res) => {
 
 router.get('/showshelves/:id(\\d+)', asyncHandler(async(req, res) => {
   const showShelf =  await db.ShowShelf.findByPk(req.params.id, {
-    include: { model: db.Show, include: {
-      model: db.Review
-    } }
+    include: { model: db.Show }
   });
+
   let shows = showShelf.Shows
-  console.log(shows[0].Reviews)
+  console.log(showShelf)
   res.render('showShelf', {shows})
 }))
 
