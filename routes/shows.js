@@ -1,6 +1,6 @@
 const express = require('express');
 const {asyncHandler, csrfProtection} = require('./utils')
-const db = require('../db/models')
+const db = require('../db/models');
 const router = express.Router();
 
 router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
@@ -20,12 +20,5 @@ router.get('/reviews/:id(\\d+)', asyncHandler(async (req, res) => {
   res.render('reviews', { review })
 }))
 
-router.delete('/reviews/delete/:id(\\d+)', asyncHandler(async (req, res) => {
-  const review = await db.Review.findByPk(req.params.id);
-  console.log(review)
-  const showId = await parseInt(review.showId, 10)
-  await review.destroy();
-  res.redirect(`/shows/${showId}`)
-}));
 
 module.exports = router
