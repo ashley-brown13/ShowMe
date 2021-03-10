@@ -12,3 +12,12 @@ deleteButtons.forEach( deleteButton => {
     }
   })
 })
+
+const editButtons = document.querySelectorAll('.edit-review')
+
+editButtons.forEach(editButton => {
+  editButton.addEventListener('click', async(e) => {
+    const reviewId = e.target.id
+    window.location.href = `/reviews/${reviewId}`
+  })
+})

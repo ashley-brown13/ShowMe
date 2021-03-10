@@ -1,6 +1,6 @@
 extends layout
 append head
-  script(src='/javascripts/show.js' type='module')
+  script(src='/javascripts/delete-on-review.js' type='module')
 include utils
 block content
   img(src=`${review.Show.imageURL}`)
@@ -8,13 +8,13 @@ block content
     h1= review.Show.title
   if user && user.id === review.userId
     div(id=review.showId)
-      form(action="/reviews/:id(\\d+)" method="post")
+      form()
         +field("Title", "title", review.title)
         div
           label(for="Review") User Review:
           textArea(id="comment" name="comment")=review.comment
-        div
-          button(type="submit") Update Review
+        div(id=review.showId)
+          button(type="submit" class='update-review' id=review.id) Update Review
       button(class="delete-review" id=review.id) Delete Review
   else
     div
