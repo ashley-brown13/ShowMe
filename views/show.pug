@@ -12,6 +12,11 @@ block content
   div
     p= show.synopsis
   div
+    if user
+      a(href=`/shows/${show.id}/reviews`) Write a review?
+    else 
+      a(href='/users/signup') Sign up to review!
+  div
     each review in reviews
       div(id=review.showId)
         h3=review.title

@@ -18,8 +18,7 @@ const updateForm = document.querySelector('.update-review')
 
   updateForm.addEventListener('submit', async(e) => {
     e.preventDefault();
-    const reviewId = e.target.id;
-    console.log(updateForm.parentElement.id)
+    const reviewId = updateForm.id;
     const showId = updateForm.parentElement.id;
     const formData = new FormData(updateForm);
     const title = formData.get('title');
