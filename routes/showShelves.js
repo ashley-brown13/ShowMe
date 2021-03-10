@@ -9,7 +9,7 @@ router.get('/showshelves', asyncHandler(async(req, res) => {
   const showShelves = await db.ShowShelf.findAll({
     where: {userId: user.id},
   })
-  res.render('showShelves', {showShelves})
+  res.render('showShelves', {showShelves, loggedUser})
 }))
 
 router.get('/showshelves/:id(\\d+)', asyncHandler(async(req, res) => {
@@ -22,8 +22,14 @@ router.get('/showshelves/:id(\\d+)', asyncHandler(async(req, res) => {
   res.render('showShelf', {shows})
 }))
 
-router.post('/showshelves', csrfProtection, asyncHandler(async(req, res) => {
-
+router.post('/showShelves', asyncHandler (async (req, res, next) => {
+  const { title } = req.body;
+  const userId = req.session.auth.userId
+  db.ShowShelf.create({
+    title,
+    userId
+  })
+  res.redirect("/showShelves")
 }))
 
 module.exports = router
