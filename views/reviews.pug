@@ -1,0 +1,9 @@
+extends layout
+block content
+  img(src=`${review.Show.imageURL}`)
+  div
+    h1= review.Show.title
+  div
+    h2= review.title
+  div
+    p= review.comment
