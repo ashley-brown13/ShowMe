@@ -8,10 +8,23 @@ router.get('/showshelves', asyncHandler(async(req, res) => {
   const user = await db.User.findByPk(loggedUser)
   const showShelves = await db.ShowShelf.findAll({
     where: {userId: user.id},
-    include : {model: db.ShowShelvesShow}
   })
-  console.log(showShelves.showShelvesShow.showId)
-  // res.render('showShelf', {title: show.title, show, reviews})
+  res.render('showShelves', {showShelves})
+}))
+
+router.get('/showshelves/:id(\\d+)', asyncHandler(async(req, res) => {
+  const showShelf =  await db.ShowShelf.findByPk(req.params.id, {
+    include: { model: db.Show, include: {
+      model: db.Review
+    } }
+  });
+  let shows = showShelf.Shows
+  console.log(shows[0].Reviews)
+  res.render('showShelf', {shows})
+}))
+
+router.post('/showshelves', csrfProtection, asyncHandler(async(req, res) => {
+
 }))
 
 module.exports = router

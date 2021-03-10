@@ -8,8 +8,10 @@ block content
         th Title
         th Rating
         th Review
-  tbody
-    each thing in things
-      tr
-        td= thing.property1
-        td= thing.property2
+    tbody
+      each show in shows
+        tr
+          td: img(src=show.imageURL)
+          td= show.title
+          //- td= show.Rating.rating
+          td= show.Reviews.comment
