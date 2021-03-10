@@ -9,6 +9,9 @@ block content
     h3 Year released: #{show.yearRealeased}
   div
     p= show.synopsis
+  //- if show.youtubeVideoURL!== null  && show.youtubeVideoURL !== 'autoplay=1&mute=1'
+  div
+    <iframe width="420" height="300" src='https://www.youtube.com/embed/kAphgHhlteM?autoplay=1&mute=1' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   div
     each review in reviews
       div(id=review.userId)
@@ -18,5 +21,5 @@ block content
         if user  && user.id  === review.userId
           div
             a(href=`/reviews/delete/${review.id}`) Delete
-          div  
+          div
             a(href=`/reviews/${review.id}`) Edit

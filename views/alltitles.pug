@@ -1,0 +1,6 @@
+extends layout
+block content
+  each show in shows
+    div
+      img(src=show.imageURL)
+    p= show.title

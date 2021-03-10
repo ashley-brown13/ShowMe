@@ -3,8 +3,13 @@ const {asyncHandler, csrfProtection} = require('./utils')
 const db = require('../db/models')
 const router = express.Router();
 
+router.get('/titles', asyncHandler(async(req, res) => {
+  const shows = await db.Show.findAll()
+  res.render('alltitles', {shows})
+}));
 router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   const show = await db.Show.findByPk(req.params.id)
+  console.log(show.youtubeVideoURL)
   const reviews = await db.Review.findAll({
     where: {showId: req.params.id},
     include: { model: db.User, attributes: db.User.fullName }

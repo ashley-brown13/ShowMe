@@ -9,7 +9,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const showsRouter = require('./routes/shows');
-const showShelvesRouter = require('./routes/showshelves')
+const showShelvesRouter = require('./routes/showShelves')
 const { secret } = require('./config/index');
 const {restoreUser } = require('./auth')
 
