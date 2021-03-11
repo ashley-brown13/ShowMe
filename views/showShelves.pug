@@ -15,8 +15,8 @@ block content
     tbody
       each showShelf in showShelves
         tr
-          td= showShelf.title
-          td 
+          td: a(href=`/showshelves/${showShelf.id}`)= showShelf.title
+          td
             form(action=`/showShelves/${showShelf.id}` method='post')
               button(type="submit" name='title') Delete
   div

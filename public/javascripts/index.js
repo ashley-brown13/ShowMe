@@ -3,8 +3,8 @@ window.addEventListener("load", (event)=>{
 
     const showShelfSelect = document.querySelectorAll('.showShelfSelect');
     const showShelfSubmit = document.querySelectorAll('.showShelfSubmit');
-    
-    
+
+
     showShelfSubmit.forEach(button => {
         button.addEventListener('click', async (event) => {
             const showShelfOption = document.querySelectorAll('.showShelfOption').value;
@@ -17,14 +17,13 @@ window.addEventListener("load", (event)=>{
                     method: "POST",
                     body: JSON.stringify(body),
                     headers: {
-                       'Content-Type': 'application/json', 
+                       'Content-Type': 'application/json',
                     }
                 })
-                console.log(res);
             } catch(err){
                 console.log(err);
             }
-            
+
         })
     })
 

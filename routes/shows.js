@@ -5,10 +5,6 @@ const db = require('../db/models');
 const {  reviewValidators } = require('./validators');
 const router = express.Router();
 
-router.get('/titles', asyncHandler(async(req, res) => {
-  const shows = await db.Show.findAll()
-  res.render('alltitles', {shows})
-}));
 router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   const show = await db.Show.findByPk(req.params.id)
   console.log(show.youtubeVideoURL)
@@ -20,11 +16,11 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   res.render('show', {title: show.title, show, reviews})
 }))
 
-router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {
-  const show = await db.Show.findByPk(req.params.id);
-  const review = await db.Review.build();
-  res.render('create-review', { show, review, csrfToken: req.csrfToken() })
-}))
+// router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {
+//   const show = await db.Show.findByPk(req.params.id);
+//   const review = await db.Review.build();
+//   res.render('create-review', { show, review, csrfToken: req.csrfToken() })
+// }))
 
 router.post('/shows/:id(\\d+)/reviews', csrfProtection, reviewValidators, asyncHandler(async (req, res) => {
   const { title, comment } = req.body
