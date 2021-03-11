@@ -13,7 +13,15 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
     include: { model: db.User, attributes: db.User.fullName }
     });
     console.log(reviews)
-  res.render('show', {title: show.title, show, reviews})
+    let user = null;
+    let shelves;
+    if (req.session.auth){
+      const loggedUser = req.session.auth.userId;
+      user = await db.User.findByPk(loggedUser)
+      shelves = await db.ShowShelf.findAll({
+    where: { userId: loggedUser }
+})}
+  res.render('show', {title: show.title, show, reviews, user, shelves})
 }))
 
 // router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {
