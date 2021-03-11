@@ -1,0 +1,58 @@
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #F4F1EB
+}
+
+.showShelfPageTitle{
+  font-size: 50px;
+  text-align: center;
+}
+
+.showShelfShowContainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px;
+  margin-left: 50px;
+  background-color: white;
+  padding: 10px;
+}
+
+.showShelfPoster{
+  width: 100px;
+}
+
+.showShelfShowContainerButtons{
+  display: flex;
+  align-content: space-around;
+}
+
+.addShelfContainer{
+  display:flex;
+  flex-direction: column;
+}
+
+.showShelfTitle{
+  margin: 5px;
+}
+
+.showShelfDeleteButton{
+  margin: 5px;
+}
+
+.showShelfSelect{
+  margin: 5px;
+  padding: 7px;
+}
+
+
+.showShelfTitleAndDelete{
+  width: 160px;
+  display:flex;
+  flex-direction: column;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+.showShelfDeleteForm{
+  background-color: white;
+}

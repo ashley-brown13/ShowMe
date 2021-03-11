@@ -6,10 +6,15 @@ h1 {
     background-color: #F4F1EB
 }
 
+.homePageTitle{
+  font-size: 50px;
+  text-align: center;
+}
 
 .showBlock {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .showImage {
@@ -33,9 +38,11 @@ h1 {
 .titleDiv {
     display:flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .showOptionsBtn {
     padding: 10px;
     margin: 5px;
+    background-color: white;
 }
