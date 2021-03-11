@@ -1,15 +1,7 @@
 extends layout
-
 append head
-  //- add page specific styles by appending to the head
-  link(rel="stylesheet" href="/stylesheets/index.css")
-  //- add page specific js
-  script(src="/javascripts/index.js" type="module" defer)
-
+//-   script(src='/javascripts/search.js' type='module')
 block content
-  h1= title
-  p Welcome to your Project Skeleton
-  p Top Ten Shows
     each show in shows
       div(value=show.id) 
         img(src=show.imageURL)
@@ -27,5 +19,5 @@ block content
               each shelf in shelves
                 option(value=shelf.id class="showShelfOption" )= shelf.title
             button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf
-          
-
+    
+    
