@@ -25,7 +25,8 @@ module.exports = (sequelize, DataTypes) => {
     imageURL: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
+    youtubeVideoURL: DataTypes.STRING,
   }, {});
   Show.associate = function(models) {
     Show.hasMany(models.Rating, {foreignKey: 'showId'})

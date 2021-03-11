@@ -14,8 +14,10 @@ block content
   div
     if user
       a(href=`/shows/${show.id}/reviews`) Write a review?
-    else 
+    else
       a(href='/users/signup') Sign up to review!
+  div
+    iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
   div
     each review in reviews
       div(id=review.showId)

@@ -7,6 +7,7 @@ const router = express.Router();
 
 router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   const show = await db.Show.findByPk(req.params.id)
+  console.log(show.youtubeVideoURL)
   const reviews = await db.Review.findAll({
     where: {showId: req.params.id},
     include: { model: db.User, attributes: db.User.fullName }
@@ -15,11 +16,11 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   res.render('show', {title: show.title, show, reviews})
 }))
 
-router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {
-  const show = await db.Show.findByPk(req.params.id);
-  const review = await db.Review.build();
-  res.render('create-review', { show, review, csrfToken: req.csrfToken() })
-}))
+// router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {
+//   const show = await db.Show.findByPk(req.params.id);
+//   const review = await db.Review.build();
+//   res.render('create-review', { show, review, csrfToken: req.csrfToken() })
+// }))
 
 router.post('/shows/:id(\\d+)/reviews', csrfProtection, reviewValidators, asyncHandler(async (req, res) => {
   const { title, comment } = req.body

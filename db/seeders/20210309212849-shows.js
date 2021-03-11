@@ -11,7 +11,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYjg2ODk0MjUtNmMzZS00MjY0LWI1YWMtN2JhMjRmZGUwY2I3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/kAphgHhlteM?autoplay=1&mute=1'
       },
       {
         title: 'Fullmetal Alchemist: Brotherhood',
@@ -21,7 +22,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Comedy, Drama, Fantasy, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTItMDI5MS00MGU4LWI1NWQtOTg5ZThhNGQwYTEzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL:  'https://www.youtube.com/embed/dqDB6gQLbPM?autoplay=1&mute=1'
       },
       {
         title: 'Avatar: The Last Airbender',
@@ -31,7 +33,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Family, Fantasy, Mystery',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BODc5YTBhMTItMjhkNi00ZTIxLWI0YjAtNTZmOTY0YjRlZGQ0XkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL:  'https://www.youtube.com/embed/d1EnW4kn1kg?end=44&autoplay=1&mute=1'
       },
       {
         title: 'Cosmos',
@@ -41,7 +44,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTY4MGQyNjgtMzdmZS00MjQ5LWIyMzItYjYyZmQzNjVhYjMyXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/knUke_w8Bao?autoplay=1&mute=1'
       },
       {
         title: 'Planet Earth II',
@@ -51,7 +55,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWYxODViMGYtMGE2ZC00ZGQ3LThhMWUtYTVkNGE3OWU4NWRkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/c8aFcHFu8QM?autoplay=1&mute=1'
       },
       {
         title: 'Breaking Bad',
@@ -61,7 +66,8 @@ module.exports = {
         genre: 'Crime, Drama, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjhiMzgxZTctNDc1Ni00OTIxLTlhMTYtZTA3ZWFkODRkNmE2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/lrcqbavlbyQ?autoplay=1&mute=1'
       },
       {
         title: 'Planet Earth',
@@ -71,7 +77,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNmZlYzIzMTItY2EzYS00YTEyLTg0ZjEtMDMzZjM3ODdhN2UzXkEyXkFqcGdeQXVyNjI0MDg2NzE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/7n_1JZgDPf4?autoplay=1&mute=1'
       },
       {
         title: 'The Sopranos',
@@ -81,7 +88,8 @@ module.exports = {
         genre: 'Crime, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZGJjYzhjYTYtMDBjYy00OWU1LTg5OTYtNmYwOTZmZjE3ZDdhXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/u9qpFgAa52U?autoplay=1&mute=1'
       },
       {
         title: 'Life',
@@ -91,7 +99,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjJhMTAxZjYtNWZkYy00Nzg1LTlkYjItZTNhZWRjNzkxMDg3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/IBws4yj7W1A?autoplay=1&mute=1'
       },
       {
         title: 'Chernobyl',
@@ -101,7 +110,8 @@ module.exports = {
         genre: 'Drama, History, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZGQ2YmMxZmEtYjI5OS00NzlkLTlkNTEtYWMyMzkyMzc2MDU5XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/s9APLXM9Ei8?autoplay=1&mute=1'
       },
       {
         title: 'The Last Dance',
@@ -111,7 +121,8 @@ module.exports = {
         genre: 'Documentary, Biography, History, Sport',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BY2U1ZTU4OWItNGU2MC00MTg1LTk4NzUtYTk3ODhjYjI0MzlmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/Peh9Yqf1GXc?autoplay=1&mute=1'
       },
       {
         title: 'Game of Thrones',
@@ -121,7 +132,8 @@ module.exports = {
         genre: 'Action, Adventure, Drama, Fantasy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/gcTkNV5Vg1E?autoplay=1&mute=1'
       },
       {
         title: 'Cosmos: A Spacetime Odyssey',
@@ -131,7 +143,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZTk5OTQyZjYtMDk3Yy00YjhmLWE2MTYtZmY4NTg1YWUzZTQ0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/_erVOAbz420?autoplay=1&mute=1'
       },
       {
         title: 'Rick and Morty',
@@ -141,7 +154,8 @@ module.exports = {
         genre: 'Animation, Adventure, Comedy, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/BFTSrbB2wII?autoplay=1&mute=1'
       },
       {
         title: 'Scam 1992: The Harshad Mehta Story',
@@ -151,7 +165,8 @@ module.exports = {
         genre: 'Biography, Crime, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjgxZTMxNmQtZGFkZS00NDUyLTllMzYtOTE0ZjdlMjM1ZWU0XkEyXkFqcGdeQXVyMTAyMTE1MDA1._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/1faUIRDYSXo?autoplay=1&mute=1'
       },
       {
         title: 'Band of Brothers',
@@ -161,7 +176,8 @@ module.exports = {
         genre: 'Action, Drama, History, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTI3ODc2ODc0M15BMl5BanBnXkFtZTYwMjgzNjc3._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/kyDkHvi9yeI?autoplay=1&mute=1'
       },
       {
         title: 'The Wire',
@@ -171,7 +187,8 @@ module.exports = {
         genre: 'Crime, Drama, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZmY5ZDMxODEtNWIwOS00NjdkLTkyMjktNWRjMDhmYjJjN2RmXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/uDcQbk78CSw?autoplay=1&mute=1'
       },
       {
         title: 'Our Planet',
@@ -181,7 +198,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BN2I1ZjA5YjQtYmQ0ZS00ZmE1LTk1ZjktNTQ5ODIzY2JiZDdhXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/aETNYyrqNYE?autoplay=1&mute=1'
       },
       {
         title: 'The World at War',
@@ -191,7 +209,8 @@ module.exports = {
         genre: 'Documentary, History, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYzExN2NhZDctOWEzMy00NzYwLTg3MDktNjYyNTQyOWY4MGYwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/0b4g4ZZNC1E?end=167&autoplay=1&mute=1'
       },
       {
         title: 'The Vietnam War',
@@ -201,7 +220,8 @@ module.exports = {
         genre: 'Documentary, History, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYWQ4ZGFhYmUtNDVhNC00N2VkLWIzYTQtOTk5ZTI1NWU2YjNlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/3j-3Xi5BcKs?autoplay=1&mute=1'
       },
       {
         title: "Chappelle's Show",
@@ -211,7 +231,8 @@ module.exports = {
         genre: 'Comedy, Music',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOWNjYTg5NGMtOWRjNy00ZGNlLTg2MmYtZjQ5NTM0MTQxOGM2XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/FRZN7IzvCVs?autoplay=1&mute=1'
       },
       {
         title: 'Death Note',
@@ -221,7 +242,8 @@ module.exports = {
         genre: 'Animation, Crime, Drama, Fantasy, Mystery, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BODkzMjhjYTQtYmQyOS00NmZlLTg3Y2UtYjkzN2JkNmRjY2FhXkEyXkFqcGdeQXVyNTM4MDQ5MDc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/NlJZ-YgAt-c?autoplay=1&mute=1'
       },
       {
         title: 'How the Universe Works',
@@ -231,7 +253,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTc0MDQ3NzI4MV5BMl5BanBnXkFtZTgwNTk1NjE0MzE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/egW86B9182A?autoplay=1&mute=1'
       },
       {
         title: 'Friends',
@@ -241,7 +264,8 @@ module.exports = {
         genre: 'Comedy, Romance',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/hDNNmeeJs1Q?autoplay=1&mute=1'
       },
       {
         title: 'Oz',
@@ -251,7 +275,8 @@ module.exports = {
         genre: 'Crime, Drama, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYjY3N2M2YjgtZTFjZS00ODA1LWJjMDgtNDgxZDllZWFiMmYyXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/fxGJyYb9_po?autoplay=1&mute=1'
       },
       {
         title: 'Twin Peaks',
@@ -261,7 +286,8 @@ module.exports = {
         genre: 'Crime, Drama, Mystery, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTExNzk2NjcxNTNeQTJeQWpwZ15BbWU4MDcxOTczOTIx._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/UXjTEw9Qm0k?autoplay=1&mute=1'
       },
       {
         title: 'Ramayan',
@@ -271,7 +297,8 @@ module.exports = {
         genre: 'Adventure, Drama, Family, Fantasy, Musical, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BODFjYWEyOTktMTU3OC00YTBhLWE4ZmEtNTJiYWUzYTYwMjIzXkEyXkFqcGdeQXVyNjU1NDgwMDg@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: null
       },
       {
         title: 'Dark',
@@ -281,7 +308,8 @@ module.exports = {
         genre: 'Crime, Drama, Mystery, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTk2NzUyOTctZDdlMS00MDJlLTgzNTEtNzQzYjFhNjA0YjBjXkEyXkFqcGdeQXVyMjg1NDcxNDE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/rrwycJ08PSA?autoplay=1&mute=1'
       },
       {
         title: 'Fawlty Towers',
@@ -291,7 +319,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYzc3MTQyYzMtMWY4Ny00N2RiLWI3ZDYtOWRlYjUxZDllMjQxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/tcliR8kAbzc?autoplay=1&mute=1'
       },
       {
         title: 'Gravity Falls',
@@ -301,7 +330,8 @@ module.exports = {
         genre: 'Animation, Adventure, Comedy, Drama, Family, Fantasy, Horror, Mystery, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTEzNDc3MDQ2NzNeQTJeQWpwZ15BbWU4MDYzMzUwMDIx._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/yfUDIPUETUg?autoplay=1&mute=1'
       },
       {
         title: 'Stranger Things',
@@ -311,7 +341,8 @@ module.exports = {
         genre: 'Drama, Fantasy, Horror, Mystery, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjEzMDAxOTUyMV5BMl5BanBnXkFtZTgwNzAxMzYzOTE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/b9EkMc79ZSU?autoplay=1&mute=1'
       },
       {
         title: "It's Always Sunny in Philadelphia",
@@ -321,7 +352,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTExNGZkMWMtMmIwZC00YjA3LTgwM2ItZjQ2YmZkMzQ1YWZkXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/pM8kz_r2vqw?autoplay=1&mute=1'
       },
       {
         title: 'Senke nad Balkanom',
@@ -331,7 +363,8 @@ module.exports = {
         genre: 'Crime, Drama, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYjAzMzc3OTMtZTAzNi00OWI0LWJmOGEtYjI3MWZmY2IzNDkxXkEyXkFqcGdeQXVyMTk0MjQ3Nzk@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/bKN1D2lP_A8?autoplay=1&mute=1'
       },
       {
         title: 'The Mandalorian',
@@ -341,7 +374,8 @@ module.exports = {
         genre: 'Action, Adventure, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZDhlMzY0ZGItZTcyNS00ZTAxLWIyMmYtZGQ2ODg5OWZiYmJkXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/aOC8E8z_ifw?autoplay=1&mute=1'
       },
       {
         title: 'Peaky Blinders',
@@ -351,7 +385,8 @@ module.exports = {
         genre: 'Crime, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTkzNjEzMDEzMF5BMl5BanBnXkFtZTgwMDI0MjE4MjE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/oVzVdvGIC7U?autoplay=1&mute=1'
       },
       {
         title: 'Arrested Development',
@@ -361,7 +396,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNTFlYTE2YTItZmQ1NS00ZWQ5LWI3OGUtYTQzNDMyZmEyYTZjXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/vzVhPCMAxWQ?autoplay=1&mute=1'
       },
       {
         title: 'Over the Garden Wall',
@@ -371,7 +407,8 @@ module.exports = {
         genre: 'Animation, Adventure, Drama, Family, Fantasy, Horror, Mystery, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYjQwZDhhNzctNTZjYy00NjYzLWE3ZjctNGQwZWY2Zjg5NTgwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/36mAsVSH_-s?autoplay=1&mute=1'
       },
       {
         title: 'Vratice se rode',
@@ -381,7 +418,8 @@ module.exports = {
         genre: 'Comedy, Crime, Drama, Romance',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMDJlYmI2NmEtZWZkMy00MTVlLTg1NzAtNjAxYWM5NWI0YmJiXkEyXkFqcGdeQXVyMzIwMTIwODc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: null
       },
       {
         title: 'Better Call Saul',
@@ -391,7 +429,8 @@ module.exports = {
         genre: 'Crime, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMGE4YzY4NGEtOWYyYS00ZDk2LWExMmMtZDIyODhiMmNlMGE0XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/l1xIGfVFb-U?autoplay=1&mute=1'
       },
       {
         title: 'The West Wing',
@@ -401,7 +440,8 @@ module.exports = {
         genre: 'Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjk3ZWE3ZDctN2Q1YS00NzNhLWFjNmYtZTkwYWQxZmQ3NzM3XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/fuL1bcE5hAE?autoplay=1&mute=1'
       },
       {
         title: 'Rome',
@@ -411,7 +451,8 @@ module.exports = {
         genre: 'Action, Drama, History, Romance, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYTM4MmU1NWYtNzJjYy00YWFhLThjOGEtZmMxOGI1NzE0NGNiXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/rtUQqiIa0oI?autoplay=1&mute=1'
       },
       {
         title: 'Dragon Ball Z',
@@ -421,7 +462,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Fantasy, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNGM5MTEyZDItZWNhOS00NzNkLTgwZTAtNWIzY2IzZmExOWMxXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/JDelwuyToVw?autoplay=1&mute=1'
       },
       {
         title: 'Leyla and Mecnun',
@@ -431,7 +473,8 @@ module.exports = {
         genre: 'Adventure, Comedy, Drama, Fantasy, Mystery, Romance',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMzE1YjMzZGItZTkwOS00ZmY3LWEzYmMtODM0OWVhNGU2MDkxXkEyXkFqcGdeQXVyNTY3OTUwODg@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: null
       },
       {
         title: 'Batman: The Animated Series',
@@ -441,7 +484,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Family, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTM3MTRkZjQtYjBkMy00YWE1LTkxOTQtNDQyNGY0YjYzNzAzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/rrmUk2YUm14?autoplay=1&mute=1'
       },
       {
         title: 'Sherlock',
@@ -451,7 +495,8 @@ module.exports = {
         genre: 'Crime, Drama, Mystery, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMWY3NTljMjEtYzRiMi00NWM2LTkzNjItZTVmZjE0MTdjMjJhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTQ4NTc5OTU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/xK7S9mrFWL4?autoplay=1&mute=1'
       },
       {
         title: 'The Blue Planet',
@@ -461,7 +506,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZGFhMGNmNDktYjY0Mi00YWE1LTlmMDQtZTBiNmU4NGYzZjZkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/s3TrFGtjFHI?autoplay=1&mute=1'
       },
       {
         title: 'Dekalog',
@@ -471,7 +517,8 @@ module.exports = {
         genre: 'Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWIzNDIzMTYtN2RiZS00NjA1LWFjNzMtOWQ0MDYxNWI1YTJiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: null
       },
       {
         title: 'Taskmaster',
@@ -481,7 +528,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTNlYzY0MTItZmI5Ni00ODEwLTkxNDktOTI3MGI1ODRmODJlXkEyXkFqcGdeQXVyMDE4MzA0NQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/hiutY6RDZHg?autoplay=1&mute=1'
       },
       {
         title: 'Persona',
@@ -491,7 +539,8 @@ module.exports = {
         genre: 'Crime, Drama, Mystery',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTJkNzJmYzgtZTZmNC00MTQ2LWE2ZGQtM2EyYjliNGViMTY5XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/DQ1_-WN7qUM?autoplay=1&mute=1'
       },
       {
         title: 'True Detective',
@@ -501,7 +550,8 @@ module.exports = {
         genre: 'Crime, Drama, Mystery, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTUwMGM2ZmYtZGEyZC00OWQyLWI2Y2QtMTdjYzMxZGJmNjhjXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/ahisFWxT2q4?autoplay=1&mute=1'
       },
       {
         title: 'Firefly',
@@ -511,7 +561,8 @@ module.exports = {
         genre: 'Adventure, Drama, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTcwNzkwMDItZmM1OC00MmQ2LTgxYjgtOTNiNDgxZDAxMjk0XkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/oBZrZij2-g8?autoplay=1&mute=1'
       },
       {
         title: "Monty Python's Flying Circus",
@@ -521,7 +572,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMWY2ZGI0OGUtZDc3YS00ZmVjLWJiNWQtZDdmNzFmM2UzYWFhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/Fh3ghPC-oEQ?autoplay=1&mute=1'
       },
       {
         title: 'Frozen Planet',
@@ -531,7 +583,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOGM5YWU2N2QtYjVhZi00MzYyLTk0ODctYmVlNDZlMjU5N2Q5XkEyXkFqcGdeQXVyMzU3MTc5OTE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/yNiBL8Jok4s?autoplay=1&mute=1'
       },
       {
         title: 'BoJack Horseman',
@@ -541,7 +594,8 @@ module.exports = {
         genre: 'Animation, Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYWQwMDNkM2MtODU4OS00OTY3LTgwOTItNjE2Yzc0MzRkMDllXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/i1eJMig5Ik4?autoplay=1&mute=1'
       },
       {
         title: 'The Civil War',
@@ -551,7 +605,8 @@ module.exports = {
         genre: 'Documentary, History, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZDc1NzI2MGEtZDA2Yy00ZWExLTgwYmItNjU3N2QyYmM0MzYwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/Y7HmBmWz9mI?autoplay=1&mute=1'
       },
       {
         title: 'The Twilight Zone',
@@ -561,7 +616,8 @@ module.exports = {
         genre: 'Drama, Fantasy, Horror, Mystery, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNTAzMDI5MzgtMGNkMC00MzllLWJhNjctNjA1NmViNGUxMzYxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/5ymjp2uIBws?autoplay=1&mute=1'
       },
       {
         title: 'Cowboy Bebop',
@@ -571,7 +627,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Drama, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNGNlNjBkODEtZThlOC00YzUxLWI0MjMtMjk3YzJmMDFlNWZlXkEyXkFqcGdeQXVyNjI0MDg2NzE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/QCaEJZqLeTU?autoplay=1&mute=1'
       },
       {
         title: 'Human Planet',
@@ -581,7 +638,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjdhZjQzYjYtM2FmNS00Y2ExLThjODEtZGQzY2M3OWYzYzc0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/GmfvOEjXWe4?autoplay=1&mute=1'
       },
       {
         title: 'The Marvelous Mrs. Maisel',
@@ -591,7 +649,8 @@ module.exports = {
         genre: 'Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZTFhMDdmODEtN2UwOS00ZjQwLTgxMGYtM2JlMGM3YTUyM2FjXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/fOmwkTrW4OQ?autoplay=1&mute=1'
       },
       {
         title: 'Mahabharat',
@@ -601,7 +660,8 @@ module.exports = {
         genre: 'Adventure, Drama, History, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZDZkZGUxNmEtOWM0MC00ODJkLWEyYzgtNDJjMzJkZWQ4MjdkXkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/qfr0NUD3FTU?autoplay=1&mute=1'
       },
       {
         title: 'Six Feet Under',
@@ -611,7 +671,8 @@ module.exports = {
         genre: 'Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTQzODk5N2UtYjE4ZC00YWM1LWJkMGYtYmY2NjNjMjIzZDRmXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/E3gYi-KvKug?autoplay=1&mute=1'
       },
       {
         title: 'Gullak',
@@ -621,7 +682,8 @@ module.exports = {
         genre: 'Comedy, Drama, Family',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMmRjOTBjMGEtMGFmZi00MDc0LTgwNzMtNjMzZTUyM2M4ZTY1XkEyXkFqcGdeQXVyNDY4NjAxNTc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/a7s10QaHVWk?autoplay=1&mute=1'
       },
       {
         title: 'Apocalypse: The Second World War',
@@ -631,7 +693,8 @@ module.exports = {
         genre: 'Documentary, History, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYzNkNWY1OWYtYzRjNy00ZTZhLTg4ZTAtODg5YmI3OTFlMzY5XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/IfI0UE9s2as?autoplay=1&mute=1'
       },
       {
         title: 'Vinland Saga',
@@ -641,7 +704,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Drama, History',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BN2UwOTMwMjMtZTE5MS00YmY4LTg4YjAtZDE3ZTg3YTU5MmQ2XkEyXkFqcGdeQXVyODEyMDIxNDY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/BRubJuMCUkI?autoplay=1&mute=1'
       },
       {
         title: 'South Park',
@@ -651,7 +715,8 @@ module.exports = {
         genre: 'Animation, Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/uLrlLDLJpMo?autoplay=1&mute=1'
       },
       {
         title: 'The Adventures of Sherlock Holmes',
@@ -661,7 +726,8 @@ module.exports = {
         genre: 'Crime, Drama, Mystery',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTI2MzM1Njk4OV5BMl5BanBnXkFtZTcwMzA0ODQyMQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/FiqSQ3bDkvs?autoplay=1&mute=1'
       },
       {
         title: 'The Boys',
@@ -671,7 +737,8 @@ module.exports = {
         genre: 'Action, Comedy, Crime, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/I5RXPrpXmWA?autoplay=1&mute=1'
       },
       {
         title: 'The Beatles Anthology',
@@ -681,7 +748,8 @@ module.exports = {
         genre: 'Documentary, Music',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjgwZmE1NDAtN2JhNy00ZGQ4LWFhMjEtZDVmZDExNzQwNDgwXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/HgkoVtbNAa8?autoplay=1&mute=1'
       },
       {
         title: 'I, Claudius',
@@ -691,7 +759,8 @@ module.exports = {
         genre: 'Biography, Drama, History',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWM1MDY1MjYtYTAzZC00MDJiLTk4MjAtOGQzNDI4YWU1MWQ0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/TB3YiO8l-JM?autoplay=1&mute=1'
       },
       {
         title: 'House of Cards',
@@ -701,7 +770,8 @@ module.exports = {
         genre: 'Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BODM1MDU2NjY5NF5BMl5BanBnXkFtZTgwMDkxNTcwNjM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/SvSkxBYuoQY?autoplay=1&mute=1'
       },
       {
         title: 'Fleabag',
@@ -711,7 +781,8 @@ module.exports = {
         genre: 'Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjA4MzU5NzQxNV5BMl5BanBnXkFtZTgwOTg3MDA5NzM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/I5Uv6cb9YRs?autoplay=1&mute=1'
       },
       {
         title: 'The Office',
@@ -721,7 +792,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/_mwRGb21tPE?autoplay=1&mute=1'
       },
       {
         title: 'Curb Your Enthusiasm',
@@ -731,7 +803,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjYyMmJjYWUtZjBjMS00MWQzLTk0OWYtYzU1MmE3NzFhZjJkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/5iaS_KRxTcM?autoplay=1&mute=1'
       },
       {
         title: 'Attack on Titan',
@@ -741,7 +814,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Drama, Fantasy, Horror',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/5iaS_KRxTcM?autoplay=1&mute=1'
       },
       {
         title: 'Sarabhai V/S Sarabhai',
@@ -751,7 +825,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjYxNzBhMmQtZjM4Yy00MGZiLWFmNDAtYmVkZGM0MWNlMTU3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: null
       },
       {
         title: 'Justice League Unlimited',
@@ -761,7 +836,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Fantasy, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTI3MjI1NTAtYjI2ZS00OTVlLTk0OTQtNTc5M2U3NmNmYjMzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/WwVgB0MRCVg?autoplay=1&mute=1'
       },
       {
         title: 'Only Fools and Horses',
@@ -771,7 +847,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYmI1NGIwNzYtOTVlMS00ZGYwLWE0ZTktYzVmMGVlMmRmN2QxXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/Y7Doa6Aei4M?autoplay=1&mute=1'
       },
       {
         title: 'The Thick of It',
@@ -781,7 +858,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjc0ZDA5OTItYzhjNi00ZTJjLTg4OTYtZjk3NzBhODRlMTViXkEyXkFqcGdeQXVyMjc5OTMxMzQ@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/AuBSwFwhxrs?autoplay=1&mute=1'
       },
       {
         title: 'Still Game',
@@ -791,7 +869,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTIwNTQwMDIwNV5BMl5BanBnXkFtZTcwMzExMzAzMQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/a-kPNwjCsf8?autoplay=1&mute=1'
       },
       {
         title: 'When They See Us',
@@ -801,7 +880,8 @@ module.exports = {
         genre: 'Biography, Crime, Drama, History',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZmJjM2YzOWEtOTYxYi00YjhkLTliMzgtMTA2MTc0NDQ1MDM4XkEyXkFqcGdeQXVyODY5OTk4MA@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/KyIrJeK2DKY?autoplay=1&mute=1'
       },
       {
         title: 'One Strange Rock',
@@ -811,7 +891,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMzBlYjhmYTMtNzY1ZS00ZGU2LWFmMzktYTg5ZGU1N2JlMGRmXkEyXkFqcGdeQXVyMTg3MDg4NzM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/XrC4vDcWmxk?autoplay=1&mute=1'
       },
       {
         title: 'Africa',
@@ -821,7 +902,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjFkYzk3ZDktYThjZC00NDgzLWIzYWEtMjI0N2Y0ZmE5ZDMwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/Acs5Ic2RFuA?autoplay=1&mute=1'
       },
       {
         title: 'Pride and Prejudice',
@@ -831,7 +913,8 @@ module.exports = {
         genre: 'Drama, Romance',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMDM0MjFlOGYtNTg2ZC00MmRkLTg5OTQtM2U5ZjUyYTgxZThiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/P5MmcT_vcBU?autoplay=1&mute=1'
       },
       {
         title: 'Last Week Tonight with John Oliver',
@@ -841,7 +924,8 @@ module.exports = {
         genre: 'Comedy, News, Talk-Show',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNDk4OTBkMGUtZWI3NC00M2Y0LWJjNjAtZmVjMGNiNDMyMmViXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/_BlI3BRUTHs?autoplay=1&mute=1'
       },
       {
         title: 'Freaks and Geeks',
@@ -851,7 +935,8 @@ module.exports = {
         genre: 'Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWJhOGFiZWMtYTY5Ni00NGU1LWE5OWItNzA5NThkNWUwYzc4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/Zc_TB41SLk4?autoplay=1&mute=1'
       },
       {
         title: 'TVF Pitchers',
@@ -861,7 +946,8 @@ module.exports = {
         genre: 'Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjQwNTQ5MjAxNF5BMl5BanBnXkFtZTgwNTU0MDA3NjE@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/xcUHB9n8Kws?autoplay=1&mute=1'
       },
       {
         title: 'Blackadder Goes Forth',
@@ -871,7 +957,8 @@ module.exports = {
         genre: 'Comedy, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTQ0OTc1NTU1NV5BMl5BanBnXkFtZTcwNDk1NDYxMQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/vH3-Gt7mgyM?autoplay=1&mute=1'
       },
       {
         title: 'Seinfeld',
@@ -881,7 +968,8 @@ module.exports = {
         genre: 'Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/iYom34LoYK4?autoplay=1&mute=1'
       },
       {
         title: 'Black Mirror',
@@ -891,7 +979,8 @@ module.exports = {
         genre: 'Drama, Sci-Fi, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYTM3YWVhMDMtNjczMy00NGEyLWJhZDctYjNhMTRkNDE0ZTI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/V0XOApF5nLU?autoplay=1&mute=1'
       },
       {
         title: 'One Punch Man',
@@ -901,7 +990,8 @@ module.exports = {
         genre: 'Animation, Action, Comedy, Fantasy, Sci-Fi',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTNmZDE2NDEtNTg3MS00OTE1LThlZGUtOGZkZTg0NTUyNGVmXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/2JAElThbKrI?autoplay=1&mute=1'
       },
       {
         title: 'Fargo',
@@ -911,7 +1001,8 @@ module.exports = {
         genre: 'Crime, Drama, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BN2NiMGE5M2UtNWNlNC00N2Y4LTkwOWUtMDlkMzEwNTcyOTcyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1'
       },
       {
         title: 'Hunter x Hunter',
@@ -921,7 +1012,8 @@ module.exports = {
         genre: 'Animation, Action, Adventure, Comedy, Fantasy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjNmZDhkN2QtNDYyZC00YzJmLTg0ODUtN2FjNjhhMzE3ZmUxXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/d6kBeJjTGnY?autoplay=1&mute=1'
       },
       {
         title: 'Das Boot',
@@ -931,7 +1023,8 @@ module.exports = {
         genre: 'Drama, Thriller, War',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNTBhZTQzZGEtZmRiOS00MzAwLWI5MzQtYTc1YTRhMzU3NzQ5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: null
       },
       {
         title: "It's a Sin",
@@ -941,7 +1034,8 @@ module.exports = {
         genre: 'Comedy, Drama, History',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWIyNGI1N2YtNzRlZS00NTFjLTk5MzMtZjQ5MTUwMTljZDZkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/hnR5DxP2e2g?autoplay=1&mute=1'
       },
       {
         title: 'Kota Factory',
@@ -951,7 +1045,8 @@ module.exports = {
         genre: 'Comedy, Drama',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNWFlNTY5MzEtNDhhMy00YTRmLWJhYjMtM2JjODkyMGRkZmUzXkEyXkFqcGdeQXVyOTAzMTc2MjA@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/pNZQ6msbOvM?autoplay=1&mute=1'
       },
       {
         title: 'Nathan for You',
@@ -961,7 +1056,8 @@ module.exports = {
         genre: 'Documentary, Comedy',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOGY4ZWM1MDUtZmM3MS00ZjAxLTkyYzMtMjgxODI1YzkzNGUwXkEyXkFqcGdeQXVyNzk2NzE5Mjk@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/NO8V72pDw1o?end=33&autoplay=1&mute=1'
       },
       {
         title: 'Narcos',
@@ -971,7 +1067,8 @@ module.exports = {
         genre: 'Biography, Crime, Drama, Thriller',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/xl8zdCY-abw?autoplay=1&mute=1'
       },
       {
         title: 'The Century of the Self',
@@ -981,7 +1078,8 @@ module.exports = {
         genre: 'Documentary',
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYjllMDM4OTAtNWE3Ni00MjVjLTkwY2EtYjFjNmI0YTY4OTFhXkEyXkFqcGdeQXVyNjMwMjk0MTQ@._V1_SX300.jpg',
         createdAt: new Date(),
-        updatedAt: new Date()
+        updatedAt: new Date(),
+        youtubeVideoURL: 'https://www.youtube.com/embed/D_0g1RUQMVQ?end=219&autoplay=1&mute=1'
       },
     ]
     );
