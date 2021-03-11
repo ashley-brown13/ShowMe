@@ -5,6 +5,7 @@ const db = require('../db/models');
 const {  reviewValidators } = require('./validators');
 const router = express.Router();
 
+
 router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   const show = await db.Show.findByPk(req.params.id)
   const avgRating = await ratings(req.params.id)
@@ -13,7 +14,15 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
     include: { model: db.User, attributes: db.User.fullName }
     });
     console.log(reviews)
-  res.render('show', {title: show.title, show, reviews, avgRating})
+    let user = null;
+    let shelves;
+    if (req.session.auth){
+      const loggedUser = req.session.auth.userId;
+      user = await db.User.findByPk(loggedUser)
+      shelves = await db.ShowShelf.findAll({
+    where: { userId: loggedUser }
+})}
+  res.render('show', {title: show.title, show, reviews, user, shelves})
 }))
 
 router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {

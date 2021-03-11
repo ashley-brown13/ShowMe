@@ -3,13 +3,18 @@ html
   head
       block head
         link(rel='stylesheet' href='/stylesheets/reset.css')
+        //- script(src='/javascripts/search.js' type='module')
         title ShowMe - #{title}
   body
     nav
-      a(href='/') ShowMe
       div
-        form(action='/search' role='search')
-          input(type='hidden' name='_csrf' value=csrfToken)
-          input(type='text' placeholder='Search Shows')
+        a(href='/') ShowMe
+      div
+        a(href='/users/login') Login
+      div
+        a(href='/users/signup') Signup
+      div
+        form(action='/search' method='post' role='search' class='search-button')
+          input(type='text' placeholder='Search Shows' id='search-input' name='searchInput')
           button(type='submit') Search
     block content

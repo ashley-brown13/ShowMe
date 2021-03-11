@@ -27,6 +27,10 @@ block content
           a(href="" class="star" title="Like it" id=4) 4 of 5
         div
           a(href="" class="star" title="Amazing" id=5) 5 0f 5
+      select(name="showShelves" class="showShelfSelect")
+        each shelf in shelves
+          option(value=shelf.id class="showShelfOption" )= shelf.title
+      button(type="click" class="addToShowShelfBtn" value = user.id id=show.id) Add to Shelf
     else
       a(href='/users/signup') Sign up to review!
   div
