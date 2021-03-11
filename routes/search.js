@@ -6,12 +6,16 @@ const {  reviewValidators } = require('./validators');
 const router = express.Router();
 const { Op } = require("sequelize");
 
+let shelves;
+
 router.post('/search', asyncHandler (async (req, res) => {
     const { searchInput } = req.body
-    const loggedUser = req.session.auth.userId;
-    let shelves = await db.ShowShelf.findAll({
-        where: { userId: loggedUser }
-    })
+    if(req.session.auth){
+        const loggedUser = req.session.auth.userId;
+        shelves = await db.ShowShelf.findAll({
+            where: { userId: loggedUser }
+        })
+    }
 
     const shows = await db.Show.findAll({ 
         where: {
