@@ -39,5 +39,11 @@ router.post('/shows/:id(\\d+)/reviews', csrfProtection, reviewValidators, asyncH
   }
 }))
 
+router.get('/reviews/:id(\\d+)', asyncHandler(async (req, res) => {
+  const review = await db.Review.findByPk(req.params.id, {
+    include: db.Show
+  });
+  res.render('reviews', { review })
+}))
 
 module.exports = router
