@@ -16,7 +16,7 @@ block content
       each showShelf in showShelves
         tr
           td= showShelf.title
-          td 
+          td
             form(action=`/showShelves/${showShelf.id}` method='post')
               button(type="submit" name='title') Delete
   div

@@ -6,10 +6,18 @@ block content
       tr
         th Poster
         th Title
+        th Add to Another ShowShelf
         th Delete
     tbody
       each show in shows
         tr
           td: img(src=show.imageURL)
           td= show.title
-          td: button(type="button") Delete
+          td
+            select(name="showShelves" class="showShelfSelect")
+              each shelf in shelves
+                option(value=shelf.id class="showShelfOption" )= shelf.title
+            button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf
+          td
+            form(action=`/showShelves/${showShelf.id}/shows/${show.id}` method='post')
+              button(type="submit" name='showTitle') Delete
