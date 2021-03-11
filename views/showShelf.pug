@@ -1,20 +1,26 @@
 extends layout
 
+append head
+  //- add page specific styles by appending to the head
+  link(rel="stylesheet" href="/stylesheets/index.css")
+  //- add page specific js
+  script(src="/javascripts/index.js" type="module" defer)
+
 block content
   table
     thead
       tr
         th Poster
         th Title
-        th Add to Another ShowShelf
         th Delete
+        th Add to Another ShowShelf
     tbody
       each show in shows
         tr
           td: img(src=show.imageURL)
           td= show.title
           td
-            select(name="showShelves" class="showShelfSelect")
+            select(name="theShelves" class="showShelfSelect")
               each shelf in shelves
                 option(value=shelf.id class="showShelfOption" )= shelf.title
             button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf

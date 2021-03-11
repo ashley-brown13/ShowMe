@@ -17,13 +17,10 @@ router.get('/showshelves/:id(\\d+)', asyncHandler(async(req, res) => {
     include: { model: db.Show }
   });
   let shows = showShelf.Shows
-  let shelves
-  if (req.session.auth){
-    const loggedUser = req.session.auth.userId;
-    user = await db.User.findByPk(loggedUser)
-    shelves = await db.ShowShelf.findAll({
-      where: { userId: loggedUser }
-  })}
+  const loggedUser = req.session.auth.userId;
+  let shelves = await db.ShowShelf.findAll({
+    where: { userId: loggedUser }
+  })
   res.render('showShelf', {shows, showShelf, shelves})
 }))
 
