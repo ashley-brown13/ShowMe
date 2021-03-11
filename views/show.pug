@@ -2,15 +2,18 @@ extends layout
 append head
   link(rel="stylesheet" href="/stylesheets/show.css")
   script(src='/javascripts/show.js' type='module')
+  link(rel="stylesheet", href="/stylesheets/star.css")
+include utils
 block content
   div(class="showInfo")
     div(class="showImage")
       img(src=show.imageURL class="img")
       if user
-        select(name="showShelves" class="showShelfSelect") 
+        +stars()
+        select(name="showShelves" class="showShelfSelect")
           each shelf in shelves
             option(value=shelf.id class="showShelfOption" )= shelf.title
-        button(type="click" class="addToShowShelfBtn" value = user.id id=show.id) Add to Shelf        
+        button(type="click" class="addToShowShelfBtn" value = user.id id=show.id) Add to Shelf
     div(class="showText")
       div(class="showTitle")
         h1= show.title
@@ -19,7 +22,10 @@ block content
         h3 Year released: #{show.yearRealeased}
       div(class="showSynopsis")
         p= show.synopsis
-  div(class="videoPreview")
+      div(class='container-ratings' id=show.id)
+        p(id='rating')= avgRating
+          span avg. Rating
+    div(class="videoPreview")
     iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
   div(class="showReviews")
     h1 ShowMe Reviews

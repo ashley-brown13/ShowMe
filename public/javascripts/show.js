@@ -22,27 +22,52 @@ editButtons.forEach(editButton => {
   })
 })
 
+const ratings = document.querySelectorAll('.star')
+ratings.forEach(rating => {
+  rating.addEventListener('click', async(e) => {
+    e.preventDefault();
+    const ratingValue = e.target.id;
+    const showId = document.querySelector('.container-ratings').id
+    const body = {ratingValue}
+    try{
+      const res = await fetch(`/api/shows/${showId}/ratings`, {
+        method: "POST",
+        body: JSON.stringify(body),
+        headers: {'Content-Type': "application/json"}
+      })
+      if(res.ok){
+        const avgRating = document.getElementById('rating');
+        const result = await fetch(`/api/shows/${showId}/ratings`);
+        const data = await result.json()
+        avgRating.innerHTML = `${data.avgRating} <span> avg. Rating </span>`
+      }
+    }catch(e) {
+      console.error(e)
+    }
+
+  })
+})
 const addToShowShelfBtn = document.querySelector('.addToShowShelfBtn')
 
 addToShowShelfBtn.addEventListener('click', async(e) => {
-  console.log('test')
-  const showShelfOption = document.querySelectorAll('.showShelfOption').value;
-  const showShelfId = e.target.previousSibling.value;
-  const userId = e.target.value;
-  const showId = e.target.id;
-  const body = { showShelfId, showId };
+console.log('test')
+const showShelfOption = document.querySelectorAll('.showShelfOption').value;
+const showShelfId = e.target.previousSibling.value;
+const userId = e.target.value;
+const showId = e.target.id;
+const body = { showShelfId, showId };
 
-  try {
-    const res = await fetch(`/api/showshelves/${showShelfId}`, {
-      method: "POST",
-      body: JSON.stringify(body),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-  } catch (err){
-    console.log(err);
-  }
+try {
+  const res = await fetch(`/api/showshelves/${showShelfId}`, {
+    method: "POST",
+    body: JSON.stringify(body),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+} catch (err){
+  console.log(err);
+}
 
 
 
