@@ -7,7 +7,12 @@ html
         title ShowMe - #{title}
   body
     nav
-      a(href='/') ShowMe
+      div
+        a(href='/') ShowMe
+      div
+        a(href='/users/login') Login
+      div
+        a(href='/users/signup') Signup
       div
         form(action='/search' method='post' role='search' class='search-button')
           input(type='text' placeholder='Search Shows' id='search-input' name='searchInput')
