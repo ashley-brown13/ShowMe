@@ -14,6 +14,10 @@ block content
   div
     if user
       a(href=`/shows/${show.id}/reviews`) Write a review?
+      select(name="showShelves" class="showShelfSelect") 
+        each shelf in shelves
+          option(value=shelf.id class="showShelfOption" )= shelf.title
+      button(type="click" class="addToShowShelfBtn" value = user.id id=show.id) Add to Shelf
     else
       a(href='/users/signup') Sign up to review!
   div
