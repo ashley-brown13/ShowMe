@@ -11,3 +11,6 @@ block content
     div
       span Not a member?
       a(href='/users/signup') Sign Up
+  form(action="/users/demo", method="post")
+        input(type="hidden" name="fullName" value="Demo")
+        button(type="submit") Demo ShowMe
