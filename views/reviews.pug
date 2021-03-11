@@ -6,6 +6,8 @@ block content
   img(src=`${review.Show.imageURL}`)
   div
     h1= review.Show.title
+  div 
+    a(href=`/shows/${review.Show.id}`) Return to previous page
   if user && user.id === review.userId
     div(id=review.showId)
       form(class="update-review" id=review.id)
