@@ -5,6 +5,7 @@ const db = require('../db/models');
 const {  reviewValidators } = require('./validators');
 const router = express.Router();
 
+
 router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   const show = await db.Show.findByPk(req.params.id)
   console.log(show.youtubeVideoURL)
