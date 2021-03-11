@@ -13,7 +13,7 @@ router.get('/', asyncHandler(async(req, res) => {
     // include: {model: db.Rating,
     // order: ['rating', 'DESC'],
     // limit: 10} 
-    limit: 10  
+    limit: 12  
   });
 
 let user = null;
