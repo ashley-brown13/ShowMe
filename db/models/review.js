@@ -3,19 +3,19 @@ module.exports = (sequelize, DataTypes) => {
   const Review = sequelize.define('Review', {
     title: {
       type: DataTypes.STRING(50),
-      allowNull: true,
+      allowNull: false,
     },
     comment: {
       type: DataTypes.TEXT,
-      allowNull: true,
+      allowNull: false,
     },
     userId: {
       type: DataTypes.INTEGER,
-      allowNull: true,
+      allowNull: false,
     },
     showId: {
       type: DataTypes.INTEGER,
-      allowNull: true,}
+      allowNull: false,}
   }, {});
   Review.associate = function(models) {
     Review.belongsTo(models.Show, {foreignKey: 'showId'});

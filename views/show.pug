@@ -1,4 +1,6 @@
 extends layout
+append head
+  script(src='/javascripts/show.js' type='module')
 block content
   div
     img(src=show.imageURL)
@@ -13,13 +15,16 @@ block content
   div
     iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
   div
+    if user
+      a(href=`/shows/${show.id}/reviews`) Write a review?
+    else
+      a(href='/users/signup') Sign up to review!
+  div
     each review in reviews
-      div(id=review.userId)
+      div(id=review.showId)
         h3=review.title
         h4=review.User.fullName
         p=review.comment
         if user  && user.id  === review.userId
-          div
-            a(href=`/reviews/delete/${review.id}`) Delete
-          div
-            a(href=`/reviews/${review.id}`) Edit
+          button(class="delete-review" id=review.id) Delete
+          button(class="edit-review" id=review.id) Edit

@@ -8,10 +8,41 @@ router.get('/showshelves', asyncHandler(async(req, res) => {
   const user = await db.User.findByPk(loggedUser)
   const showShelves = await db.ShowShelf.findAll({
     where: {userId: user.id},
-    include : {model: db.ShowShelvesShow}
   })
-  console.log(showShelves.showShelvesShow.showId)
-  // res.render('showShelf', {title: show.title, show, reviews})
+  res.render('showShelves', {showShelves, loggedUser})
+}))
+
+router.get('/showshelves/:id(\\d+)', asyncHandler(async(req, res) => {
+  const showShelf =  await db.ShowShelf.findByPk(req.params.id, {
+    include: { model: db.Show }
+  });
+
+  let shows = showShelf.Shows
+  console.log(showShelf)
+  res.render('showShelf', {shows})
+}))
+
+router.post('/showShelves', asyncHandler (async (req, res, next) => {
+  const { title } = req.body;
+  const userId = req.session.auth.userId
+  db.ShowShelf.create({
+    title,
+    userId
+  })
+  res.redirect("/showShelves")
+}))
+
+router.post('/showShelves/:id(\\d+)', asyncHandler (async(req, res, next) => {
+  const id = req.params.id;
+  const shelf = await db.ShowShelf.findByPk(id);
+
+  await shelf.destroy();
+  // console.log(req.body)
+  // const userId = req.session.auth.userId
+  // await db.ShowShelf.destroy({
+  //     where: { title, userId }
+  // })
+  res.redirect("/showShelves")
 }))
 
 module.exports = router

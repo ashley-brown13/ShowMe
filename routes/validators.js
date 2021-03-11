@@ -34,7 +34,19 @@ const loginValidators = [
     .withMessage('Please provide a value for password.')
 ]
 
+const reviewValidators = [
+  check('title')
+    .exists({ checkFalsy: true })
+    .withMessage('Please provide a valid title.')
+    .isLength({ max: 50 })
+    .withMessage('Review title can not be longer than 50 characters.'),
+  check('comment')
+    .exists({ checkFalsy: true })
+    .withMessage('Please provide a review.')
+]
+
 module.exports = {
   signUpValidators,
-  loginValidators
+  loginValidators,
+  reviewValidators
 }

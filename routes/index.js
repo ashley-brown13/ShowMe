@@ -24,7 +24,7 @@ if (req.session.auth){
   shelves = await db.ShowShelf.findAll({
     where: { userId: loggedUser }
 })}
-  // console.log(shelves)
+ console.log(shelves)
   res.render('index', { title: 'ShowMe', shows , user, shelves});
 }))
 

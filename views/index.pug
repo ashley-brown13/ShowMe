@@ -11,10 +11,21 @@ block content
   p Welcome to your Project Skeleton
   p Top Ten Shows 
     each show in shows
-      div 
+      div(value=show.id) 
         img(src=show.imageURL)
-        div= show.title
-        if user
-          select(name="showShelves") 
-            each shelf in shelves
-              option(value=shelf.id)= shelf.title
+        div
+          a(href=`/shows/${show.id}`)= show.title
+          select(name="Ratings" placeholder="Rate")
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+          if user
+            button(type="click" class="ratingSubmit") Rate
+            select(name="showShelves" class="showShelfSelect") 
+              each shelf in shelves
+                option(value=shelf.id class="showShelfOption" )= shelf.title
+            button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf
+          
+
