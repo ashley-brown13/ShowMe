@@ -518,7 +518,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWIzNDIzMTYtN2RiZS00NjA1LWFjNzMtOWQ0MDYxNWI1YTJiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: null
       },
       {
         title: 'Taskmaster',
@@ -529,7 +529,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTNlYzY0MTItZmI5Ni00ODEwLTkxNDktOTI3MGI1ODRmODJlXkEyXkFqcGdeQXVyMDE4MzA0NQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/hiutY6RDZHg?autoplay=1&mute=1'
       },
       {
         title: 'Persona',
@@ -540,7 +540,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTJkNzJmYzgtZTZmNC00MTQ2LWE2ZGQtM2EyYjliNGViMTY5XkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/DQ1_-WN7qUM?autoplay=1&mute=1'
       },
       {
         title: 'True Detective',
@@ -551,7 +551,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTUwMGM2ZmYtZGEyZC00OWQyLWI2Y2QtMTdjYzMxZGJmNjhjXkEyXkFqcGdeQXVyNjU2ODM5MjU@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/ahisFWxT2q4?autoplay=1&mute=1'
       },
       {
         title: 'Firefly',
@@ -562,7 +562,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOTcwNzkwMDItZmM1OC00MmQ2LTgxYjgtOTNiNDgxZDAxMjk0XkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/oBZrZij2-g8?autoplay=1&mute=1'
       },
       {
         title: "Monty Python's Flying Circus",
@@ -573,7 +573,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMWY2ZGI0OGUtZDc3YS00ZmVjLWJiNWQtZDdmNzFmM2UzYWFhXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/Fh3ghPC-oEQ?autoplay=1&mute=1'
       },
       {
         title: 'Frozen Planet',
@@ -584,7 +584,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOGM5YWU2N2QtYjVhZi00MzYyLTk0ODctYmVlNDZlMjU5N2Q5XkEyXkFqcGdeQXVyMzU3MTc5OTE@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/yNiBL8Jok4s?autoplay=1&mute=1'
       },
       {
         title: 'BoJack Horseman',
@@ -595,7 +595,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYWQwMDNkM2MtODU4OS00OTY3LTgwOTItNjE2Yzc0MzRkMDllXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/i1eJMig5Ik4?autoplay=1&mute=1'
       },
       {
         title: 'The Civil War',
@@ -606,7 +606,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZDc1NzI2MGEtZDA2Yy00ZWExLTgwYmItNjU3N2QyYmM0MzYwXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/Y7HmBmWz9mI?autoplay=1&mute=1'
       },
       {
         title: 'The Twilight Zone',
@@ -617,7 +617,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNTAzMDI5MzgtMGNkMC00MzllLWJhNjctNjA1NmViNGUxMzYxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/5ymjp2uIBws?autoplay=1&mute=1'
       },
       {
         title: 'Cowboy Bebop',
@@ -628,7 +628,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNGNlNjBkODEtZThlOC00YzUxLWI0MjMtMjk3YzJmMDFlNWZlXkEyXkFqcGdeQXVyNjI0MDg2NzE@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/QCaEJZqLeTU?autoplay=1&mute=1'
       },
       {
         title: 'Human Planet',
@@ -639,7 +639,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjdhZjQzYjYtM2FmNS00Y2ExLThjODEtZGQzY2M3OWYzYzc0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/GmfvOEjXWe4?autoplay=1&mute=1'
       },
       {
         title: 'The Marvelous Mrs. Maisel',
@@ -650,7 +650,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZTFhMDdmODEtN2UwOS00ZjQwLTgxMGYtM2JlMGM3YTUyM2FjXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/fOmwkTrW4OQ?autoplay=1&mute=1'
       },
       {
         title: 'Mahabharat',
@@ -661,7 +661,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZDZkZGUxNmEtOWM0MC00ODJkLWEyYzgtNDJjMzJkZWQ4MjdkXkEyXkFqcGdeQXVyODAzNzAwOTU@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/qfr0NUD3FTU?autoplay=1&mute=1'
       },
       {
         title: 'Six Feet Under',
@@ -672,7 +672,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTQzODk5N2UtYjE4ZC00YWM1LWJkMGYtYmY2NjNjMjIzZDRmXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/E3gYi-KvKug?autoplay=1&mute=1'
       },
       {
         title: 'Gullak',
@@ -683,7 +683,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMmRjOTBjMGEtMGFmZi00MDc0LTgwNzMtNjMzZTUyM2M4ZTY1XkEyXkFqcGdeQXVyNDY4NjAxNTc@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/a7s10QaHVWk?autoplay=1&mute=1'
       },
       {
         title: 'Apocalypse: The Second World War',
@@ -694,7 +694,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYzNkNWY1OWYtYzRjNy00ZTZhLTg4ZTAtODg5YmI3OTFlMzY5XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/IfI0UE9s2as?autoplay=1&mute=1'
       },
       {
         title: 'Vinland Saga',
@@ -705,7 +705,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BN2UwOTMwMjMtZTE5MS00YmY4LTg4YjAtZDE3ZTg3YTU5MmQ2XkEyXkFqcGdeQXVyODEyMDIxNDY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/BRubJuMCUkI?autoplay=1&mute=1'
       },
       {
         title: 'South Park',
@@ -716,7 +716,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOGE2YWUzMDItNTg2Ny00NTUzLTlmZGYtNWMyNzVjMjQ3MThkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/uLrlLDLJpMo?autoplay=1&mute=1'
       },
       {
         title: 'The Adventures of Sherlock Holmes',
@@ -727,7 +727,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTI2MzM1Njk4OV5BMl5BanBnXkFtZTcwMzA0ODQyMQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/FiqSQ3bDkvs?autoplay=1&mute=1'
       },
       {
         title: 'The Boys',
@@ -738,7 +738,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNGEyOGJiNWEtMTgwMi00ODU4LTlkMjItZWI4NjFmMzgxZGY2XkEyXkFqcGdeQXVyNjcyNjcyMzQ@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/I5RXPrpXmWA?autoplay=1&mute=1'
       },
       {
         title: 'The Beatles Anthology',
@@ -749,7 +749,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjgwZmE1NDAtN2JhNy00ZGQ4LWFhMjEtZDVmZDExNzQwNDgwXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/HgkoVtbNAa8?autoplay=1&mute=1'
       },
       {
         title: 'I, Claudius',
@@ -760,7 +760,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWM1MDY1MjYtYTAzZC00MDJiLTk4MjAtOGQzNDI4YWU1MWQ0XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/TB3YiO8l-JM?autoplay=1&mute=1'
       },
       {
         title: 'House of Cards',
@@ -771,7 +771,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BODM1MDU2NjY5NF5BMl5BanBnXkFtZTgwMDkxNTcwNjM@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/SvSkxBYuoQY?autoplay=1&mute=1'
       },
       {
         title: 'Fleabag',
@@ -782,7 +782,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjA4MzU5NzQxNV5BMl5BanBnXkFtZTgwOTg3MDA5NzM@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/I5Uv6cb9YRs?autoplay=1&mute=1'
       },
       {
         title: 'The Office',
@@ -793,7 +793,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/_mwRGb21tPE?autoplay=1&mute=1'
       },
       {
         title: 'Curb Your Enthusiasm',
@@ -804,7 +804,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjYyMmJjYWUtZjBjMS00MWQzLTk0OWYtYzU1MmE3NzFhZjJkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/5iaS_KRxTcM?autoplay=1&mute=1'
       },
       {
         title: 'Attack on Titan',
@@ -815,7 +815,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTY5ODk1NzUyMl5BMl5BanBnXkFtZTgwMjUyNzEyMTE@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/5iaS_KRxTcM?autoplay=1&mute=1'
       },
       {
         title: 'Sarabhai V/S Sarabhai',
@@ -826,7 +826,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNjYxNzBhMmQtZjM4Yy00MGZiLWFmNDAtYmVkZGM0MWNlMTU3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: null
       },
       {
         title: 'Justice League Unlimited',
@@ -837,7 +837,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTI3MjI1NTAtYjI2ZS00OTVlLTk0OTQtNTc5M2U3NmNmYjMzXkEyXkFqcGdeQXVyOTgwMzk1MTA@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/WwVgB0MRCVg?autoplay=1&mute=1'
       },
       {
         title: 'Only Fools and Horses',
@@ -848,7 +848,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYmI1NGIwNzYtOTVlMS00ZGYwLWE0ZTktYzVmMGVlMmRmN2QxXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/Y7Doa6Aei4M?autoplay=1&mute=1'
       },
       {
         title: 'The Thick of It',
@@ -859,7 +859,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjc0ZDA5OTItYzhjNi00ZTJjLTg4OTYtZjk3NzBhODRlMTViXkEyXkFqcGdeQXVyMjc5OTMxMzQ@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/AuBSwFwhxrs?autoplay=1&mute=1'
       },
       {
         title: 'Still Game',
@@ -870,7 +870,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTIwNTQwMDIwNV5BMl5BanBnXkFtZTcwMzExMzAzMQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/a-kPNwjCsf8?autoplay=1&mute=1'
       },
       {
         title: 'When They See Us',
@@ -881,7 +881,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZmJjM2YzOWEtOTYxYi00YjhkLTliMzgtMTA2MTc0NDQ1MDM4XkEyXkFqcGdeQXVyODY5OTk4MA@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/KyIrJeK2DKY?autoplay=1&mute=1'
       },
       {
         title: 'One Strange Rock',
@@ -892,7 +892,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMzBlYjhmYTMtNzY1ZS00ZGU2LWFmMzktYTg5ZGU1N2JlMGRmXkEyXkFqcGdeQXVyMTg3MDg4NzM@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/XrC4vDcWmxk?autoplay=1&mute=1'
       },
       {
         title: 'Africa',
@@ -903,7 +903,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjFkYzk3ZDktYThjZC00NDgzLWIzYWEtMjI0N2Y0ZmE5ZDMwXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/Acs5Ic2RFuA?autoplay=1&mute=1'
       },
       {
         title: 'Pride and Prejudice',
@@ -914,7 +914,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMDM0MjFlOGYtNTg2ZC00MmRkLTg5OTQtM2U5ZjUyYTgxZThiXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/P5MmcT_vcBU?autoplay=1&mute=1'
       },
       {
         title: 'Last Week Tonight with John Oliver',
@@ -925,7 +925,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNDk4OTBkMGUtZWI3NC00M2Y0LWJjNjAtZmVjMGNiNDMyMmViXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/_BlI3BRUTHs?autoplay=1&mute=1'
       },
       {
         title: 'Freaks and Geeks',
@@ -936,7 +936,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWJhOGFiZWMtYTY5Ni00NGU1LWE5OWItNzA5NThkNWUwYzc4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/Zc_TB41SLk4?autoplay=1&mute=1'
       },
       {
         title: 'TVF Pitchers',
@@ -947,7 +947,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMjQwNTQ5MjAxNF5BMl5BanBnXkFtZTgwNTU0MDA3NjE@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/xcUHB9n8Kws?autoplay=1&mute=1'
       },
       {
         title: 'Blackadder Goes Forth',
@@ -958,7 +958,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTQ0OTc1NTU1NV5BMl5BanBnXkFtZTcwNDk1NDYxMQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/vH3-Gt7mgyM?autoplay=1&mute=1'
       },
       {
         title: 'Seinfeld',
@@ -969,7 +969,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjZjMzQ2ZmUtZWEyZC00NWJiLWFjM2UtMzhmYzZmZDcxMzllXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/iYom34LoYK4?autoplay=1&mute=1'
       },
       {
         title: 'Black Mirror',
@@ -980,7 +980,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYTM3YWVhMDMtNjczMy00NGEyLWJhZDctYjNhMTRkNDE0ZTI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/V0XOApF5nLU?autoplay=1&mute=1'
       },
       {
         title: 'One Punch Man',
@@ -991,7 +991,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BMTNmZDE2NDEtNTg3MS00OTE1LThlZGUtOGZkZTg0NTUyNGVmXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/2JAElThbKrI?autoplay=1&mute=1'
       },
       {
         title: 'Fargo',
@@ -1002,7 +1002,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BN2NiMGE5M2UtNWNlNC00N2Y4LTkwOWUtMDlkMzEwNTcyOTcyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1'
       },
       {
         title: 'Hunter x Hunter',
@@ -1013,7 +1013,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZjNmZDhkN2QtNDYyZC00YzJmLTg0ODUtN2FjNjhhMzE3ZmUxXkEyXkFqcGdeQXVyNjc2NjA5MTU@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/d6kBeJjTGnY?autoplay=1&mute=1'
       },
       {
         title: 'Das Boot',
@@ -1024,7 +1024,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNTBhZTQzZGEtZmRiOS00MzAwLWI5MzQtYTc1YTRhMzU3NzQ5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: null
       },
       {
         title: "It's a Sin",
@@ -1035,7 +1035,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BZWIyNGI1N2YtNzRlZS00NTFjLTk5MzMtZjQ5MTUwMTljZDZkXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/hnR5DxP2e2g?autoplay=1&mute=1'
       },
       {
         title: 'Kota Factory',
@@ -1046,7 +1046,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNWFlNTY5MzEtNDhhMy00YTRmLWJhYjMtM2JjODkyMGRkZmUzXkEyXkFqcGdeQXVyOTAzMTc2MjA@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/pNZQ6msbOvM?autoplay=1&mute=1'
       },
       {
         title: 'Nathan for You',
@@ -1057,7 +1057,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BOGY4ZWM1MDUtZmM3MS00ZjAxLTkyYzMtMjgxODI1YzkzNGUwXkEyXkFqcGdeQXVyNzk2NzE5Mjk@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/NO8V72pDw1o?end=33&autoplay=1&mute=1'
       },
       {
         title: 'Narcos',
@@ -1068,7 +1068,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/xl8zdCY-abw?autoplay=1&mute=1'
       },
       {
         title: 'The Century of the Self',
@@ -1079,7 +1079,7 @@ module.exports = {
         imageURL: 'https://m.media-amazon.com/images/M/MV5BYjllMDM4OTAtNWE3Ni00MjVjLTkwY2EtYjFjNmI0YTY4OTFhXkEyXkFqcGdeQXVyNjMwMjk0MTQ@._V1_SX300.jpg',
         createdAt: new Date(),
         updatedAt: new Date(),
-        youtubeVideoURL: 'autoplay=1&mute=1'
+        youtubeVideoURL: 'https://www.youtube.com/embed/D_0g1RUQMVQ?end=219&autoplay=1&mute=1'
       },
     ]
     );
