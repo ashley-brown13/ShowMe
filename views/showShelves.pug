@@ -11,13 +11,14 @@ block content
     thead
       tr
         th ShowShelf
-        th Edit
         th Delete
     tbody
       each showShelf in showShelves
         tr
           td= showShelf.title
-          td: button(type="button") Delete
+          td 
+            form(action=`/showShelves/${showShelf.id}` method='post')
+              button(type="submit" name='title') Delete
   div
     form(action='/showShelves' method='post')
       label(for="shelfAdd") Want to add a new shelf?
