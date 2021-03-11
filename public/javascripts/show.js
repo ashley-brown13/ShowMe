@@ -21,3 +21,32 @@ editButtons.forEach(editButton => {
     window.location.href = `/reviews/${reviewId}`
   })
 })
+
+// const ratingForm = document.querySelector('.rating-form')
+
+// ratingForm.addEventListener('submit', async(e) => {
+//   e.preventDefault()
+//   console.log(e.target)
+// })
+
+const ratings = document.querySelectorAll('.star')
+console.log(ratings)
+ratings.forEach(rating => {
+  rating.addEventListener('click', async(e) => {
+    e.preventDefault();
+    const ratingValue = e.target.id;
+    const showId = document.querySelector('.container-ratings').id
+    const body = {ratingValue}
+    try{
+      const res = await fetch(`/api/shows/${showId}/ratings`, {
+        method: "POST",
+        body: JSON.stringify(body),
+        headers: {'Content-Type': "application/json"}
+      })
+      console.log(res)
+    }catch(e) {
+      console.error(e)
+    }
+
+  })
+})

@@ -11,11 +11,27 @@ block content
     h3 Year released: #{show.yearRealeased}
   div
     p= show.synopsis
-  div
+  div(class="container-ratings" id=show.id)
     if user
       a(href=`/shows/${show.id}/reviews`) Write a review?
+      p Rate Show:
+      form(class="rating-form" )
+        input(type="hidden", name="_csrf", value= csrfToken)
+        div
+          a(href="" class="star" title="Not great" id=1) 1 of 5
+        div
+          a(href="" class="star" title="Not bad" id=2) 2 0f 5
+        div
+          a(href="" class="star" title="Ok" id=3) 3 of 5
+        div
+          a(href="" class="star" title="Like it" id=4) 4 of 5
+        div
+          a(href="" class="star" title="Amazing" id=5) 5 0f 5
     else
       a(href='/users/signup') Sign up to review!
+  div
+    p= avgRating
+      span avg. Rating
   div
     iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
   div

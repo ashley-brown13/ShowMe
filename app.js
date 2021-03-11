@@ -12,6 +12,7 @@ const showsRouter = require('./routes/shows');
 const showShelvesRouter = require('./routes/showShelves');
 const apiShowsRouter = require('./routes/api/shows');
 const apiShowShelvesRouter = require('./routes/api/showShelves')
+const apiRatingsRouter = require('./routes/api/ratings')
 const { secret } = require('./config/index');
 const {restoreUser } = require('./auth')
 
@@ -48,6 +49,7 @@ app.use(showsRouter);
 app.use(showShelvesRouter);
 app.use(apiShowsRouter);
 app.use(apiShowShelvesRouter);
+app.use(apiRatingsRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
