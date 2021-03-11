@@ -32,4 +32,17 @@ router.post('/showShelves', asyncHandler (async (req, res, next) => {
   res.redirect("/showShelves")
 }))
 
+router.post('/showShelves/:id(\\d+)', asyncHandler (async(req, res, next) => {
+  const id = req.params.id;
+  const shelf = await db.ShowShelf.findByPk(id);
+
+  await shelf.destroy();
+  // console.log(req.body)
+  // const userId = req.session.auth.userId
+  // await db.ShowShelf.destroy({
+  //     where: { title, userId }
+  // })
+  res.redirect("/showShelves")
+}))
+
 module.exports = router
