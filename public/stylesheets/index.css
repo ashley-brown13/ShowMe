@@ -3,6 +3,7 @@ h1 {
 }
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #F4F1EB
 }
 
 
@@ -19,8 +20,8 @@ h1 {
 .individualShow {
     display: flex;
     margin: 20px;
-    
-    
+
+
 }
 
 .showOptionsDiv {

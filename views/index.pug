@@ -8,10 +8,10 @@ append head
 
 block content
   h1= title
-  p Top Twelve Shows 
+  p Top Twelve Shows
   div(class='showBlock')
     each show in shows
-      div(value=show.id) 
+      div(value=show.id)
       div(class="individualShow")
         div(class='titleDiv')
           a(href=`/shows/${show.id}` class="showTitle")= show.title
@@ -25,9 +25,7 @@ block content
             option 5
           if user
             button(type="click" class="ratingSubmit" class='showOptionsBtn') Rate
-            select(name="showShelves" class="showShelfSelect" class='showOptionsBtn') 
+            select(name="showShelves" class="showShelfSelect" class='showOptionsBtn')
               each shelf in shelves
                 option(value=shelf.id class="showShelfOption" class='showOptionsBtn')= shelf.title
             button(type="click" class="showShelfSubmit" value=user.id id=show.id class='showOptionsBtn') Add to Shelf
-          
-
