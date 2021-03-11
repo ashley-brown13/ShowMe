@@ -8,24 +8,26 @@ append head
 
 block content
   h1= title
-  p Welcome to your Project Skeleton
   p Top Ten Shows 
+  div(class='showBlock')
     each show in shows
       div(value=show.id) 
-        img(src=show.imageURL)
-        div
-          a(href=`/shows/${show.id}`)= show.title
-          select(name="Ratings" placeholder="Rate")
+      div(class="individualShow")
+        div(class='titleDiv')
+          a(href=`/shows/${show.id}` class="showTitle")= show.title
+          img(src=show.imageURL class="showImage")
+        div(class="showOptionsDiv")
+          select(name="Ratings" placeholder="Rate" class='showOptionsBtn')
             option 1
             option 2
             option 3
             option 4
             option 5
           if user
-            button(type="click" class="ratingSubmit") Rate
-            select(name="showShelves" class="showShelfSelect") 
+            button(type="click" class="ratingSubmit" class='showOptionsBtn') Rate
+            select(name="showShelves" class="showShelfSelect" class='showOptionsBtn') 
               each shelf in shelves
-                option(value=shelf.id class="showShelfOption" )= shelf.title
-            button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf
+                option(value=shelf.id class="showShelfOption" class='showOptionsBtn')= shelf.title
+            button(type="click" class="showShelfSubmit" value=user.id id=show.id class='showOptionsBtn') Add to Shelf
           
 
