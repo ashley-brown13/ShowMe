@@ -22,15 +22,7 @@ editButtons.forEach(editButton => {
   })
 })
 
-// const ratingForm = document.querySelector('.rating-form')
-
-// ratingForm.addEventListener('submit', async(e) => {
-//   e.preventDefault()
-//   console.log(e.target)
-// })
-
 const ratings = document.querySelectorAll('.star')
-console.log(ratings)
 ratings.forEach(rating => {
   rating.addEventListener('click', async(e) => {
     e.preventDefault();
@@ -43,7 +35,12 @@ ratings.forEach(rating => {
         body: JSON.stringify(body),
         headers: {'Content-Type': "application/json"}
       })
-      console.log(res)
+      if(res.ok){
+        const avgRating = document.getElementById('rating');
+        const result = await fetch(`/api/shows/${showId}/ratings`);
+        const data = await result.json()
+        avgRating.innerHTML = `${data.avgRating} <span> avg. Rating </span>`
+      }
     }catch(e) {
       console.error(e)
     }
@@ -53,24 +50,24 @@ ratings.forEach(rating => {
 const addToShowShelfBtn = document.querySelector('.addToShowShelfBtn')
 
 addToShowShelfBtn.addEventListener('click', async(e) => {
-  console.log('test')
-  const showShelfOption = document.querySelectorAll('.showShelfOption').value;
-  const showShelfId = e.target.previousSibling.value;
-  const userId = e.target.value;
-  const showId = e.target.id;
-  const body = { showShelfId, showId };
+console.log('test')
+const showShelfOption = document.querySelectorAll('.showShelfOption').value;
+const showShelfId = e.target.previousSibling.value;
+const userId = e.target.value;
+const showId = e.target.id;
+const body = { showShelfId, showId };
 
-  try {
-    const res = await fetch(`/api/showshelves/${showShelfId}`, {
-      method: "POST",
-      body: JSON.stringify(body),
-      headers: {
-        "Content-Type": "application/json"
-      }
-    })
-  } catch (err){
-    console.log(err);
-  }
+try {
+  const res = await fetch(`/api/showshelves/${showShelfId}`, {
+    method: "POST",
+    body: JSON.stringify(body),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+} catch (err){
+  console.log(err);
+}
 
 
 
