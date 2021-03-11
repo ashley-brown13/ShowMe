@@ -12,3 +12,6 @@ block content
         div
             span Already a member?
             a(href='/users/login') Sign In
+    form(action="/users/demo", method="post")
+        input(type="hidden" name="fullName" value="Demo")
+        button(type="submit") Demo ShowMe
