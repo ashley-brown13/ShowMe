@@ -22,7 +22,7 @@ block content
         h3 Year released: #{show.yearRealeased}
       div(class="showSynopsis")
         p= show.synopsis
-      div
+      div(class='container-ratings' id=show.id)
         p(id='rating')= avgRating
           span avg. Rating
     div(class="videoPreview")
