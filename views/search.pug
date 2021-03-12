@@ -5,7 +5,7 @@ append head
   script(src="/javascripts/index.js" type="module" defer)
 
 block content
-  p(class="homePageTitle") Top Shows
+  p(class="homePageTitle") Results
   div(class='showBlock')
     each show in shows
       div(value=show.id)
@@ -16,26 +16,3 @@ block content
             a(href=`/shows/${show.id}` )
               img(src=show.imageURL class="showImage")
 
-//- extends layout
-//- append head
-//- //-   script(src='/javascripts/search.js' type='module')
-//- block content
-//-     each show in shows
-//-       div(value=show.id) 
-//-         img(src=show.imageURL)
-//-         div
-//-           a(href=`/shows/${show.id}`)= show.title
-//-           select(name="Ratings" placeholder="Rate")
-//-             option 1
-//-             option 2
-//-             option 3
-//-             option 4
-//-             option 5
-//-           if user
-//-             button(type="click" class="ratingSubmit") Rate
-//-             select(name="showShelves" class="showShelfSelect") 
-//-               each shelf in shelves
-//-                 option(value=shelf.id class="showShelfOption" )= shelf.title
-//-             button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf
-    
-    
