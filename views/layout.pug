@@ -3,25 +3,24 @@ html
   head
       block head
         link(rel='stylesheet' href='/stylesheets/reset.css')
+        link(rel='stylesheet' href='/stylesheets/navBar.css')
         //- script(src='/javascripts/search.js' type='module')
         title ShowMe - #{title}
   body
     div(class='container')
       div(class='navBar')
-        div
-          a(href='/') ShowMe
-        div
+        div(class='logo')
+          a(href='/' class='showMe') ShowMe
+        div(class='search')
           form(action='/search' method='post' role='search' class='search-button')
             input(type='text' placeholder='Search Shows' id='search-input' name='searchInput')
-            button(type='submit') Search
+            button(type='submit' class='search') Search
         if user
-          form(method='post' action='/users/logout')
+          form(method='post' action='/users/logout' class='logout')
             button(type='submit') Logout
           div
-            a(href='/showshelves') My ShowShelves
+            a(href='/showshelves' class='myShowShelf') My ShowShelves
         else 
-          div(class='login')
-            a(href='/users/login') Login
-          div
-            a(href='/users/signup') Signup
+          a(href='/users/login' class='login user') Login
+          a(href='/users/signup' class='signup user') Signup
     block content
