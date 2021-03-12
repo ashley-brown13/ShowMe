@@ -42,6 +42,7 @@ showShelfSubmit.forEach(button => {
         const showId = event.target.id;
         const body = { showShelfId, showId, }
         try {
+            alert(`Added to shelf!`);
             const res = await fetch(`/api/showshelves/${showShelfId}`, {
                 method: "POST",
                 body: JSON.stringify(body),
