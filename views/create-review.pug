@@ -1,24 +1,31 @@
 extends layout
+append head
+  link(rel="stylesheet" href="/stylesheets/create-edit-review.css")
+  script(src='/javascripts/show.js' type='module')
+  link(rel="stylesheet", href="/stylesheets/star.css")
 include utils
 block content
-  img(src=show.imageURL)
-  div
-    h1= show.title
-  div
-    h2 Number of seasons: #{show.numberOfSeasons}
-    h3 Year released: #{show.yearRealeased}
-  div
-    a(href=`/shows/${show.id}`) Cancel review
-  div
-    p= show.synopsis
-  +validationErrorSummary(errors)
-  if user 
-    form(method='post' action=`/shows/${show.id}/reviews`)
-      input(type='hidden' name='_csrf' value=csrfToken)
-      +field('Title', 'title', review.title, text, 'Title your review', required)
+  div(class="showInfo")
+    img(src=show.imageURL class="img")
+    div(class="showText")
       div
-        label(for='comment') Review:
-        textArea(id='comment' name='comment' placeholder='Write your review' required)=review.comment
+        h1= show.title
       div
-        button(type='submit') Add review!
+        h2 Number of seasons: #{show.numberOfSeasons}
+        h3 Year released: #{show.yearReleased}
+      div
+        a(href=`/shows/${show.id}`) Cancel review
+      div
+        p= show.synopsis
+      +validationErrorSummary(errors)
+      if user
+        div(class="reviewSection") 
+          form(method='post' action=`/shows/${show.id}/reviews`)
+            input(type='hidden' name='_csrf' value=csrfToken)
+            +field('', 'title', review.title, text, 'Title your review', required)
+            div
+              label(for='comment' class="reviewText")
+              textArea(id='comment' name='comment' placeholder='Write your review' required)=review.comment
+            div
+              button(type='submit' class="submit") Add review!
       
