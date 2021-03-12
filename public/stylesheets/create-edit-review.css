@@ -1,0 +1,67 @@
+* {
+    background-color: #F9F7F4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-weight: bold;
+}
+.showInfo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 10px 20px 10px 20px;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.showText {
+    flex-direction: column;
+    padding: 0 20px 50px 40px;
+    align-self: center;
+}
+
+p {
+    background-color: white;
+}
+
+form {
+    background-color: white;
+}
+
+.reviewSection textArea, 
+.reviewSection input {
+    margin: 10px;
+    height: 30px;
+    padding: 10px;
+}
+
+.reviewSection textArea {
+    width: 550px;
+    height: 100px;
+}
+.submit {
+    margin: 5px 0 0 10px;
+    width: 550px;
+    height: 25px;
+}
+
+.delete-review {
+    width: 550px;
+    height: 25px;
+    margin: 30px 0 0 10px;
+}
+
+.userTitle {
+    margin: 10px;
+    height: 30px;
+    padding: 10px;
+}
+
+.userReview {
+    width: 550px;
+    height: 100px;
+    text-wrap: column;
+}

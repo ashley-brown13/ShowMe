@@ -1,25 +1,28 @@
 extends layout
 append head
-  script(src='/javascripts/review.js' type='module')
+  link(rel="stylesheet" href="/stylesheets/create-edit-review.css")
+  script(src='/javascripts/show.js' type='module')
+  link(rel="stylesheet", href="/stylesheets/star.css")
 include utils
 block content
-  img(src=`${review.Show.imageURL}`)
-  div
-    h1= review.Show.title
-  div
-    a(href=`/shows/${review.Show.id}`) Return to previous page
-  if user && user.id === review.userId
-    div(id=review.showId)
-      form(class="update-review" id=review.id)
-        +field("Title", "title", review.title)
-        div
-          label(for="comment") User Review:
-          textArea(id="comment" name="comment")=review.comment
-        div(id=review.showId)
-          button(type="submit" id=review.id) Update Review
-      button(class="delete-review" id=review.id) Delete Review
-  else
-    div
-      h2=review.title
-    div
-      p=review.comment
+  div(class="showInfo")
+    img(src=`${review.Show.imageURL}` class="img")
+    div(class="showText")
+      h1= review.Show.title
+      div
+        a(href=`/shows/${review.Show.id}`) Return to previous page
+      if user && user.id === review.userId
+        div(id=review.showId class="reviewSection")
+          form(class="update-review" id=review.id)
+            +field("", "title", review.title)
+            div
+              label(for="comment")
+              textArea(id="comment" name="comment")=review.comment
+            div(id=review.showId)
+              button(type="submit" id=review.id class="submit") Update Review
+          button(class="delete-review" id=review.id) Delete Review
+      else
+        div(class="userTitle")
+          h2=review.title
+        div(class="userReview")
+          p=review.comment
