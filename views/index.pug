@@ -17,7 +17,7 @@ block content
         div(class='titleDiv')
           a(href=`/shows/${show.id}` class="showTitle")= show.title
           img(src=show.imageURL class="showImage")
-        div(class="showOptionsDiv")
+        div(class="showOptionsDiv" id=show.id)
           if user
             +stars()
             select(name="showShelves" class="showShelfSelect" class='showOptionsBtn')

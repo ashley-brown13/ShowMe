@@ -23,7 +23,7 @@ block content
       div(class="showSynopsis")
         p= show.synopsis
       div(class='container-ratings' id=show.id)
-        p(id='rating')= avgRating 
+        p(id='rating')= avgRating
           span avg. Rating
     div(class="videoPreview")
     iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -31,7 +31,8 @@ block content
     h1 ShowMe Reviews
     div
       if user
-        a(href=`/shows/${show.id}/reviews`) Write a review?
+        if !userReview
+          a(href=`/shows/${show.id}/reviews`) Write a review?
       else
         a(href='/users/signup') Sign up to review!
     each review in reviews
