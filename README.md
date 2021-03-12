@@ -3,11 +3,7 @@
 <!-- Brief explanation of what the app is and does
 Link to live site
 Link to wiki docs
-
-Discussion of technologies used
-Discussion of two features that show off the team's technical abilities
-Discussion of both challenges faced and the way the team solved them
-Code snippets to highlight the best code -->
+-->
 
 ## Technologies
 * Express
@@ -29,4 +25,52 @@ const res = await fetch(`/api/showshelves/${showShelfId}`, {
       headers: { 'Content-Type': 'application/json'}
 ```
 
-Some of the problem that were encountered when trying to implement this
+This feature tooke some time to solve, but it worked. The harder part was the delete button once the show has been added successfully.
+
+```pug
+form(action=`/showShelves/${showShelf.id}/shows/${show.id}` method='post' class="showShelfDeleteForm")
+  button(type="submit" name='showTitle'class="showShelfDeleteButton") Delete
+```
+
+The problem was that the delete button that a form with a post was used and then the await destroy() was used on the show, so that it would be deleted in the database and then reloaded the same page.
+
+```js
+router.post('/showShelves/:id(\\d+)/shows/:showid(\\d+)', asyncHandler (async(req, res, next) => {
+  const showId = req.params.showid;
+  const showShelfId = req.params.id;
+  const join = await db.ShowShelvesShow.findOne({where: {showId, showShelfId}})
+  await join.destroy();
+  res.redirect(`/showshelves/${showShelfId}`)
+}))
+```
+The problem was that at first when a person kept pressing the delete button instead of deleting the show it would create more delete buttons. The reason was because the delete buttons wasn't a child of the form directly, once this was fixed the button start working as it was supposed to.
+
+## Ratings
+
+Implement the ratings feature was interesting and an exciting challenge because the client can submit their rating without the page reloading, also it dynamically changes the stars representing the ratings from grey to a yellow color.
+
+The stars are actually anchor tags that have an href that leads no where. There is a total of five anchor representing five stars.
+
+```pug
+a(href="" class="star off" title="Like it" id=4) 4 of 5
+```
+It uses an api route to make a post fetch call, but that is not the most exciting part of the ratings. What is actually exciting is that the anchor tags have a `mouseenter` event on each anchor tag which removes and adds a class and vice versa with a setTimeout function which removes a class and adds a class.
+
+```js
+ratings.forEach(rating => {
+    rating.addEventListener("mouseenter", async(e) => {
+      e.target.classList.remove('off')
+      e.target.classList.add('on')
+      setTimeout(() => {
+        e.target.classList.remove('on');
+        e.target.classList.add('off')
+      }, 2000)
+    })
+  })
+```
+## Challenges
+This was the first time, I have worked on an application starting from the design to the implementation as a student. As a group we worked cohesively using our strengths to create an application that we are all proud of.
+
+The problems that I, Mauro Sanchez, encountered was that I had difficulty at the beginning with making api calls in the same application without having two servers one for the api and the other for the front end, but once I figure this out, it made working in our application easier.
+
+
