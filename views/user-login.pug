@@ -13,10 +13,10 @@ block content
           +field('Password', 'password', null, 'password')
         div(class='submitBtns')
           button(type="submit" class='submitButton') Sign In
-          form(action="/users/demo", method="post" class='demoUser')
-              input(type="hidden" name="fullName" value="Demo")
-              button(type="submit" ) Demo ShowMe
-        div(class="signUp")
-          span Not a member?
-          a(href='/users/signup' ) Sign Up
-      
+      form(action="/users/demo", method="post" class='demoUser')
+        input(type="hidden" name="fullName" value="Demo")
+        button(type="submit" ) Demo ShowMe
+      div(class="signUp")
+        span Not a member?
+        a(href='/users/signup' ) Sign Up
+    
