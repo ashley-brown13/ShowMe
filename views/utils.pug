@@ -9,3 +9,16 @@ mixin validationErrorSummary(errors)
         ul
             each error in errors
                 li= error
+mixin stars()
+     p Rate Show:
+        div(class="container-stars")
+          //- div
+          a(href="" class="star off" title="Not great" id=1) 1 of 5
+          //- div
+          a(href="" class="star off" title="Not bad" id=2) 2 0f 5
+          //- div
+          a(href="" class="star off" title="Ok" id=3) 3 of 5
+          //- div
+          a(href="" class="star off" title="Like it" id=4) 4 of 5
+          //- div
+          a(href="" class="star" title="Amazing" id=5) 5 0f 5

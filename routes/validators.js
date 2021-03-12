@@ -45,6 +45,7 @@ const reviewValidators = [
     .withMessage('Please provide a review.')
 ]
 
+
 module.exports = {
   signUpValidators,
   loginValidators,

@@ -1,12 +1,12 @@
 extends layout
 append head
-  script(src='/javascripts/delete-on-review.js' type='module')
+  script(src='/javascripts/review.js' type='module')
 include utils
 block content
   img(src=`${review.Show.imageURL}`)
   div
     h1= review.Show.title
-  div 
+  div
     a(href=`/shows/${review.Show.id}`) Return to previous page
   if user && user.id === review.userId
     div(id=review.showId)

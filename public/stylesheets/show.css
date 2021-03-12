@@ -1,0 +1,41 @@
+* {
+    background-color: #F9F7F4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-weight: bold;
+}
+.showInfo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 20px 50px 20px 20px;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.showText {
+    flex-direction: column;
+    padding: 20px;
+    align-self: center;
+}
+
+p {
+    background-color: white;
+}
+
+
+.videoPreview {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.showReviews {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

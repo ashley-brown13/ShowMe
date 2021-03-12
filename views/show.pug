@@ -1,28 +1,39 @@
 extends layout
 append head
+  link(rel="stylesheet" href="/stylesheets/show.css")
   script(src='/javascripts/show.js' type='module')
+  link(rel="stylesheet", href="/stylesheets/star.css")
+include utils
 block content
-  div
-    img(src=show.imageURL)
-  div
-    h1= show.title
-  div
-    h2 Number of seasons: #{show.numberOfSeasons}
-    h3 Year released: #{show.yearRealeased}
-  div
-    p= show.synopsis
-  div
-    if user
-      a(href=`/shows/${show.id}/reviews`) Write a review?
-      select(name="showShelves" class="showShelfSelect") 
-        each shelf in shelves
-          option(value=shelf.id class="showShelfOption" )= shelf.title
-      button(type="click" class="addToShowShelfBtn" value = user.id id=show.id) Add to Shelf
-    else
-      a(href='/users/signup') Sign up to review!
-  div
+  div(class="showInfo")
+    div(class="showImage")
+      img(src=show.imageURL class="img")
+      if user
+        +stars()
+        select(name="showShelves" class="showShelfSelect")
+          each shelf in shelves
+            option(value=shelf.id class="showShelfOption" )= shelf.title
+        button(type="click" class="addToShowShelfBtn" value = user.id id=show.id) Add to Shelf
+    div(class="showText")
+      div(class="showTitle")
+        h1= show.title
+      div(class="showRelease")
+        h2 Number of seasons: #{show.numberOfSeasons}
+        h3 Year released: #{show.yearRealeased}
+      div(class="showSynopsis")
+        p= show.synopsis
+      div(class='container-ratings' id=show.id)
+        p(id='rating')= avgRating
+          span avg. Rating
+    div(class="videoPreview")
     iframe(width="420" height="300" src=show.youtubeVideoURL  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-  div
+  div(class="showReviews")
+    h1 ShowMe Reviews
+    div
+      if user
+        a(href=`/shows/${show.id}/reviews`) Write a review?
+      else
+        a(href='/users/signup') Sign up to review!
     each review in reviews
       div(id=review.showId)
         h3=review.title
