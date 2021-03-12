@@ -46,7 +46,7 @@ router.post('/shows/:id(\\d+)/reviews', csrfProtection, reviewValidators, asyncH
     return res.redirect(`/shows/${req.params.id}`)
   } else {
     const errors = validationErrors.array().map(error => error.msg);
-    res.render('create-review', { show, review, csrfToken: req.csrfToken(), errors })
+    res.render('create-review', { show: req.params.id, review, csrfToken: req.csrfToken(), errors })
   }
 }))
 
