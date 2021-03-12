@@ -16,7 +16,9 @@ block content
       div(class="individualShow")
         div(class='titleDiv')
           a(href=`/shows/${show.id}` class="showTitle")= show.title
-          img(src=show.imageURL class="showImage")
+          div
+            a(href=`/shows/${show.id}` )
+              img(src=show.imageURL class="showImage")
         div(class="showOptionsDiv")
           if user
             +stars()
