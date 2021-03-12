@@ -19,7 +19,7 @@ block content
           img(src=show.imageURL class="showImage")
         div(class="showOptionsDiv" id=show.id)
           if user
-            +stars()
+            +stars(show.id)
             select(name="showShelves" class="showShelfSelect" class='showOptionsBtn')
               each shelf in shelves
                 option(value=shelf.id class="showShelfOption" class='showOptionsBtn')= shelf.title

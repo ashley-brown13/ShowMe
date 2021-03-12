@@ -10,10 +10,10 @@ router.post('/api/shows/:id/ratings', asyncHandler(async(req, res) => {
   const {ratingValue} = req.body
   if(userRating){
     await userRating.update({rating: ratingValue});
-    return res.json({upadated: 'updated'})
+    return res.json({updated: 'updated'})
   }else {
-    const rating = await db.Rating.create({rating: ratingValue, userId, showId: req.params.id})
-    res.json({rating})
+    await db.Rating.create({rating: ratingValue, userId, showId: req.params.id});
+    res.json({created: 'created'})
   }
 }));
 

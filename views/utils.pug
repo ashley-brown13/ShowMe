@@ -9,11 +9,12 @@ mixin validationErrorSummary(errors)
         ul
             each error in errors
                 li= error
-mixin stars()
+mixin stars(showId)
      p(class="background") Rate Show:
-        div(class="container-stars")
+        div(class="container-stars" id=showId)
           a(href="" class="star off" title="Not great" id=1) 1 of 5
           a(href="" class="star off" title="Not bad" id=2) 2 0f 5
           a(href="" class="star off" title="Ok" id=3) 3 of 5
           a(href="" class="star off" title="Like it" id=4) 4 of 5
           a(href="" class="star off" title="Amazing" id=5) 5 0f 5
+        p(id=`rating${showId}`)

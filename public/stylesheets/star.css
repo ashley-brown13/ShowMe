@@ -4,13 +4,15 @@
 .star{
   width: 30px;
   height: 45px;
-  background-image: url("../images/star.jpg");
-  background-size: 45px;
-  color: transparent;
+  font-size: 0px;
   background-repeat: no-repeat;
 
 }
-.star:hover{
+.star.off {
+  background-image: url("../images/star.jpg");
+  background-size: 45px;
+}
+.star.on {
   background-image: url('../images/color-star.jpg');
   background-size: 45px;
 }
