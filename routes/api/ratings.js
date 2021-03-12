@@ -6,9 +6,15 @@ const {ratings} = require('../utils')
 
 router.post('/api/shows/:id/ratings', asyncHandler(async(req, res) => {
   const {userId} = req.session.auth
+  const userRating = await db.Rating.findOne({where: {showId: req.params.id, userId }})
   const {ratingValue} = req.body
-  const rating = await db.Rating.create({rating: ratingValue, userId, showId: req.params.id})
-  res.json({rating})
+  if(userRating){
+    await userRating.update({rating: ratingValue});
+    return res.json({updated: 'updated'})
+  }else {
+    await db.Rating.create({rating: ratingValue, userId, showId: req.params.id});
+    res.json({created: 'created'})
+  }
 }));
 
 router.get('/api/shows/:id(\\d+)/ratings', asyncHandler(async(req, res) => {
