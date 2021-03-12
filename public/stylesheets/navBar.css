@@ -1,3 +1,27 @@
+@media screen and (max-width:821px){ 
+    .navbar-left {
+        padding-left: 130px;
+    }
+    .navbar-right{
+        padding-left: 120px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .logout-form,
+    .logout-button{
+        padding-left: 30px;
+    }
+
+    /* .myShowShelf,
+     .myshow-dev
+     {
+        margin-right: 50px;
+    } */
+.search{
+    display: none;
+}}
+
 
 .container {
     background-color:#e2dccf;
@@ -7,10 +31,20 @@
 
 .navBar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-right: 50px;
     margin-left: 50px;
+    max-width: auto;
+}
+
+.navbar-left{
+    display: flex;
+}
+
+.navbar-right{
+    display: flex;
 }
 
 .logo {
@@ -18,53 +52,61 @@
     height: 50px;
     background: content-box radial-gradient(#e6e3df, #746954);
     border-radius: 50px;
-    margin-left: 200px;
 }
 
 .showMe {
     position: absolute;
-    margin-left: 15px;
+    margin-left: 10px;
     color: #555555;
-    padding-top: 13px;
+    padding-top: 15px;
     font-weight: bold;
+    font-size: larger;
 }
-
-.login {
-    /* position: absolute; */
-    color: #555555;
-    justify-items: end;
-    margin-left: 300px;
-    font-weight: bold;
-    margin-right: -150px;
-} 
-/* .myShowShelf {
-    color: #555555;
-    justify-items: end;
-    margin-left: 300px;
-    font-weight: bold;
-    margin-right: -50px;
-} */
 
 .search-button {
     top: 30px;
     left: 575px;
     background: transparent;
 }
-   
+
 input {
     height: 35px;
     width: 300px;
     border-radius: 10px;
+    margin-top: 7px;
 } 
 
 .search {
     margin-left: 5px;
     height: 35px;
     border-radius: 10px;
+    cursor: pointer;
+    font-size:medium;
 }
 
-.signup {
-    margin-right: 200px;
+.login,
+.myShowShelf {
+    color: #555555;
+    font-weight: bold;
+    padding-right: 20px;
+} 
+
+.signup,
+.logout-button {
+    margin-right: 150px;
     font-weight: bold;
     color: #555555;
+}
+
+.logout-button{
+  border: none;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.logout-form,
+.logout-button{
+    background-color: transparent;
+    font-size:medium;
 }

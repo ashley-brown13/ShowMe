@@ -9,18 +9,20 @@ html
   body
     div(class='container')
       div(class='navBar')
-        div(class='logo')
-          a(href='/' class='showMe') ShowMe
-        div(class='search')
-          form(action='/search' method='post' role='search' class='search-button')
-            input(type='text' placeholder='Search Shows' id='search-input' name='searchInput')
-            button(type='submit' class='search') Search
-        if user
-          form(method='post' action='/users/logout' class='logout')
-            button(type='submit') Logout
-          div
-            a(href='/showshelves' class='myShowShelf') My ShowShelves
-        else 
-          a(href='/users/login' class='login user') Login
-          a(href='/users/signup' class='signup user') Signup
+        div(class='navbar-left')
+          div(class='logo')
+            a(href='/' class='showMe') ShowMe
+          div(class='search')
+            form(action='/search' method='post' role='search' class='search-button search')
+              input(type='text' placeholder='Search Shows' id='search-input' name='searchInput' class='search')
+              button(type='submit' class='search') Search
+        div(class='navbar-right')
+          if user
+            div(class='myshow-dev')
+              a(href='/showshelves' class='myShowShelf') My ShowShelves
+            form(method='post' action='/users/logout' class='logout-form')
+              button(type='submit' class='logout-button') Logout
+          else 
+            a(href='/users/login' class='login') Login
+            a(href='/users/signup' class='signup') Signup
     block content
