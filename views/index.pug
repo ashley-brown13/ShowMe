@@ -25,3 +25,4 @@ block content
               each shelf in shelves
                 option(value=shelf.id class="showShelfOption" class='showOptionsBtn')= shelf.title
             button(type="click" class="showShelfSubmit" value=user.id id=show.id class='showOptionsBtn') Add to Shelf
+            a(style="visibility: hidden" id="itemAdded") Added to ShowShelf!
