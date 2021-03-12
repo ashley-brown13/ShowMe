@@ -1,9 +1,16 @@
 # ShowMe
 
-<!-- Brief explanation of what the app is and does
-Link to live site
-Link to wiki docs
--->
+ShowMe is a website that allows all users to view ratings, reviews, and basic information about TV shows. If a user creates an account with ShowMe they are able to store lists of shows, called ShowShelves. There are three empty ShowShelves provided when a user signs up-Want to watch, Watching, and Watched-but users are able to create, name, and delete additional ShowShelves.
+
+Logged in users are also able to rate shows on a scale of 1-5, and the average of the user ratings can be found on the show page. Finally, users are able to write, edit, and delete reviews that are featured on the show page to be viewed by all users.
+
+## Link to live site
+ https://salty-headland-52925.herokuapp.com/
+
+
+## Site Wiki
+https://github.com/ashley-brown13/ShowMe/wiki
+
 
 ## Technologies
 * Express
