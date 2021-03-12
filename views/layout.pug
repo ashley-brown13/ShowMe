@@ -6,15 +6,22 @@ html
         //- script(src='/javascripts/search.js' type='module')
         title ShowMe - #{title}
   body
-    nav
-      div
-        a(href='/') ShowMe
-      div
-        a(href='/users/login') Login
-      div
-        a(href='/users/signup') Signup
-      div
-        form(action='/search' method='post' role='search' class='search-button')
-          input(type='text' placeholder='Search Shows' id='search-input' name='searchInput')
-          button(type='submit') Search
+    div(class='container')
+      div(class='navBar')
+        div
+          a(href='/') ShowMe
+        div
+          form(action='/search' method='post' role='search' class='search-button')
+            input(type='text' placeholder='Search Shows' id='search-input' name='searchInput')
+            button(type='submit') Search
+        if user
+          form(method='post' action='/users/logout')
+            button(type='submit') Logout
+          div
+            a(href='/showshelves') My ShowShelves
+        else 
+          div(class='login')
+            a(href='/users/login') Login
+          div
+            a(href='/users/signup') Signup
     block content
