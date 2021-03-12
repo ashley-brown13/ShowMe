@@ -39,3 +39,17 @@ p {
     flex-direction: column;
     align-items: center;
 }
+
+h3 {
+    font-weight: bold;
+}
+.reviews {
+    border: 5px solid #F9F7F4;
+    width: 400px;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+}
+.edit-review, .delete-review {
+    margin: 10px;
+}

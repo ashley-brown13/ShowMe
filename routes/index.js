@@ -6,15 +6,16 @@ const { signUpValidators, loginValidators } = require('./validators');
 const { validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs')
 const { loginUser, logoutUser } = require('../auth')
+const { Sequelize } = require('sequelize');
 
 /* GET home page. */
 router.get('/', asyncHandler(async(req, res) => {
   const shows = await db.Show.findAll({ 
-    // include: {model: db.Rating,
-    // order: ['rating', 'DESC'],
-    // limit: 10} 
+    order: [[ Sequelize.fn('RANDOM')]],
     limit: 12  
   });
+
+  //Encounter.findAll({ order: Sequelize.literal('rand()'), limit: 5 }).then((encounters)
 
 let user = null;
 let shelves;

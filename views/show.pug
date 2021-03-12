@@ -36,10 +36,10 @@ block content
       else
         a(href='/users/signup') Sign up to review!
     each review in reviews
-      div(id=review.showId)
+      div(id=review.showId class="reviews")
         h3=review.title
-        h4=review.User.fullName
         p=review.comment
+        h4 -#{review.User.fullName}
         if user  && user.id  === review.userId
           button(class="delete-review" id=review.id) Delete
           button(class="edit-review" id=review.id) Edit
