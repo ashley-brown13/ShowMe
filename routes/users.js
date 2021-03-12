@@ -90,10 +90,15 @@ router.post('/users/login', csrfProtection, loginValidators, asyncHandler(async(
   })
 }))
 
-router.post('/user/logout', (req, res) => {
-  logoutUser(req, res);
-  res.redirect('/');
-});
+router.post('/users/logout', asyncHandler(async(req, res, next) => {
+   await logoutUser(req, res);
+   return req.session.save((error) => {
+    if(error){
+      next(error)
+    }
+    return res.redirect('/')
+  })
+}));
 
 router.post('/users/demo',  asyncHandler(async(req, res, next) => {
   
