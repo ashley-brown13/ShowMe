@@ -37,6 +37,10 @@ router.post('/showShelves', asyncHandler (async (req, res, next) => {
 router.post('/showShelves/:id(\\d+)', asyncHandler (async(req, res, next) => {
   const id = req.params.id;
   const shelf = await db.ShowShelf.findByPk(id);
+  const shows = await db.ShowShelvesShow.findAll( {where: { showShelfId: id }});
+  shows.forEach(async (show) => {
+    await show.destroy();
+  })
   await shelf.destroy();
   res.redirect("/showShelves")
 }))
