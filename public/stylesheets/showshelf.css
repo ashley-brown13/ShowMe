@@ -16,6 +16,8 @@
   margin-left: 50px;
   background-color: white;
   padding: 10px;
+  max-width: 800px;
+
 }
 
 .showShelfPoster{
@@ -55,4 +57,10 @@
 }
 .showShelfDeleteForm{
   background-color: white;
+}
+
+.showShelfContainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
