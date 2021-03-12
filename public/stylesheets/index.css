@@ -20,14 +20,21 @@ h1 {
 
 .showImage {
     width: 260px;
-    padding: 5px;
+    padding: 20px;
     background-color: white;
+    border-radius: 10%;
 }
 
 .individualShow {
     display: flex;
     margin: 20px;
     background-color: white;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.individualShow:hover{
+  box-shadow: 7px 7px 7px rgb(211, 185, 129)
 }
 
 .showOptionsDiv {
