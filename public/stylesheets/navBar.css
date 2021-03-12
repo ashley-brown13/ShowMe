@@ -1,0 +1,70 @@
+
+.container {
+    background-color:#e2dccf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+  }
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    background: content-box radial-gradient(#e6e3df, #746954);
+    border-radius: 50px;
+    margin-left: 200px;
+}
+
+.showMe {
+    position: absolute;
+    margin-left: 15px;
+    color: #555555;
+    padding-top: 13px;
+    font-weight: bold;
+}
+
+.login {
+    /* position: absolute; */
+    color: #555555;
+    justify-items: end;
+    margin-left: 300px;
+    font-weight: bold;
+    margin-right: -150px;
+} 
+/* .myShowShelf {
+    color: #555555;
+    justify-items: end;
+    margin-left: 300px;
+    font-weight: bold;
+    margin-right: -50px;
+} */
+
+.search-button {
+    top: 30px;
+    left: 575px;
+    background: transparent;
+}
+   
+input {
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+} 
+
+.search {
+    margin-left: 5px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.signup {
+    margin-right: 200px;
+    font-weight: bold;
+    color: #555555;
+}
