@@ -10,9 +10,9 @@ const { Sequelize } = require('sequelize');
 
 /* GET home page. */
 router.get('/', asyncHandler(async(req, res) => {
-  const shows = await db.Show.findAll({ 
+  const shows = await db.Show.findAll({
     order: [[ Sequelize.fn('RANDOM')]],
-    limit: 12  
+    limit: 12
   });
 
   //Encounter.findAll({ order: Sequelize.literal('rand()'), limit: 5 }).then((encounters)
@@ -25,7 +25,6 @@ if (req.session.auth){
   shelves = await db.ShowShelf.findAll({
     where: { userId: loggedUser }
 })}
- console.log(shelves)
   res.render('index', { title: 'ShowMe', shows , user, shelves});
 }))
 

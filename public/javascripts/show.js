@@ -61,7 +61,6 @@ ratings.forEach(rating => {
 const addToShowShelfBtn = document.querySelector('.addToShowShelfBtn')
 if(addToShowShelfBtn){
   addToShowShelfBtn.addEventListener('click', async(e) => {
-    console.log('test')
     const showShelfOption = document.querySelectorAll('.showShelfOption').value;
     const showShelfId = e.target.previousSibling.value;
     const userId = e.target.value;
