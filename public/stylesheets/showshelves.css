@@ -62,3 +62,11 @@
 .addShelfFormButton{
   font-size: 15px;
 }
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+}
