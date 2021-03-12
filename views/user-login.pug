@@ -1,16 +1,22 @@
 extends layout.pug
 include utils.pug
 block content
+  link(rel="stylesheet", href="/stylesheets/user-login.css")
   +validationErrorSummary(errors)
-  form(action="/users/login", method="post")
-    input(type="hidden", name="_csrf", value=csrfToken)
-    +field('E-mail', 'email', null , 'email', 'you@yours.com')
-    +field('Password', 'password', null, 'password')
-    div
-      button(type="submit") Sign In
-    div
-      span Not a member?
-      a(href='/users/signup') Sign Up
-  form(action="/users/demo", method="post")
-        input(type="hidden" name="fullName" value="Demo")
-        button(type="submit") Demo ShowMe
+  div(class='signUpParentDiv')
+    div(class='signupFormDiv')
+      form(action="/users/login", method="post" class='formDiv')
+        input(type="hidden", name="_csrf", value=csrfToken)
+        div(class='emailField')
+          +field('E-mail', 'email', null , 'email', 'you@yours.com')
+        div(class='passwordField')
+          +field('Password', 'password', null, 'password')
+        div(class='submitBtns')
+          button(type="submit" class='submitButton') Sign In
+          form(action="/users/demo", method="post" class='demoUser')
+              input(type="hidden" name="fullName" value="Demo")
+              button(type="submit" ) Demo ShowMe
+        div(class="signUp")
+          span Not a member?
+          a(href='/users/signup' ) Sign Up
+      
