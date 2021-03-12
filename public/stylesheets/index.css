@@ -21,25 +21,27 @@ h1 {
 .showImage {
     width: 260px;
     padding: 5px;
+    background-color: white;
 }
 
 .individualShow {
     display: flex;
     margin: 20px;
-
-
+    background-color: white;
 }
 
 .showOptionsDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
 }
 
 .titleDiv {
     display:flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .showOptionsBtn {
@@ -58,3 +60,10 @@ h1 {
     padding: 20px;
 }
 
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+}

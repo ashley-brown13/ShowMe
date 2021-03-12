@@ -1,8 +1,9 @@
 extends layout
-
+include utils
 append head
   //- add page specific styles by appending to the head
   link(rel="stylesheet" href="/stylesheets/index.css")
+  link(rel="stylesheet", href="/stylesheets/star.css")
   //- add page specific js
   script(src="/javascripts/index.js" type="module" defer)
 
@@ -17,14 +18,8 @@ block content
           a(href=`/shows/${show.id}` class="showTitle")= show.title
           img(src=show.imageURL class="showImage")
         div(class="showOptionsDiv")
-          select(name="Ratings" placeholder="Rate" class='showOptionsBtn')
-            option 1
-            option 2
-            option 3
-            option 4
-            option 5
           if user
-            button(type="click" class="ratingSubmit" class='showOptionsBtn') Rate
+            +stars()
             select(name="showShelves" class="showShelfSelect" class='showOptionsBtn')
               each shelf in shelves
                 option(value=shelf.id class="showShelfOption" class='showOptionsBtn')= shelf.title
