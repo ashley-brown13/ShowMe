@@ -10,7 +10,8 @@ block content
   div(class="showShelfContainer")
     each show in shows
       div(class="showShelfShowContainer")
-        img(src=show.imageURL class="showShelfPoster")
+        a(href=`/shows/${show.id}` )
+          img(src=show.imageURL class="showShelfPoster")
         div(class="showShelfTitleAndDelete")
           div(class="showShelfTitle")= show.title
           form(action=`/showShelves/${showShelf.id}/shows/${show.id}` method='post' class="showShelfDeleteForm")
