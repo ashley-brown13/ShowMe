@@ -81,3 +81,14 @@ This was the first time, I have worked on an application starting from the desig
 The problems that I, Mauro Sanchez, encountered was that I had difficulty at the beginning with making api calls in the same application without having two servers one for the api and the other for the front end, but once I figure this out, it made working in our application easier.
 
 
+## Instructions
+After cloning the repository to your local machine, follow the instructions below to start the app:
+
+>1. `npm install` to intall all dependencies for the app.
+>2. Make a .env file with the .env.excample file information, change password and secret placeholder values.
+>3. Create the user role in psql with `CREATEDB` attribute.
+>4. `npx dotenv sequelize db:create`
+>5. `npx dotenv sequelize db:migrate`
+>6. `npx dotenv sequelize db:seed:all`
+>7. `npm start` to run the app
+>>* The app is running on port: `8080`
