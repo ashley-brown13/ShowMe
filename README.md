@@ -82,6 +82,13 @@ The problems that I, Mauro Sanchez, encountered was that I had difficulty at the
 
 Sean Rader: The biggest issue that I faced all week personally was using CSS to style the review and show pages. It definitely is not a strength of mine, and it took a lot of reading through old notes, readings, and MDN.
 
+
+Savannah Rice: The biggest challenge I faced was setting up the API route to add a movie from the index page to a user's showshelf. It was challenging to get all the pieces (Pug, API route, etc.) to connect properly, however I learned a lot and am very happy with the result. 
+
+Heba Elkasaby: The challenges I faced:
+                                      1- impelmenting the lougout button, at the beginning I coded it as an anchor element, but it didn't work and was still show me as I am logged in. It took me time to be able to code it as a form with method 'post'.
+                                      2- although the CSS is my favorite part, it was a little tricky. But I went through the reading then it became much easier.
+
 For me, Ashley Brown, the biggest challenge for me was understanding how to connect all the portions of the project together when we needed to use an API route. Once I figured out how all of the parts connected, it was simpler to understand how the project works as a whole from the ground up.
 
-Savannah Rice: The biggest challenge I faced was setting up the API route to add a movie from the index page to a user's showshelf. It was challenging to get all the pieces (Pug, API route, etc.) to connect properly, however I learned a lot and am very happy with the result.
+
