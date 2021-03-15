@@ -10,7 +10,8 @@ block content
   div(class="showShelfContainer")
     each show in shows
       div(class="showShelfShowContainer")
-        img(src=show.imageURL class="showShelfPoster")
+        a(href=`/shows/${show.id}` )
+          img(src=show.imageURL class="showShelfPoster")
         div(class="showShelfTitleAndDelete")
           div(class="showShelfTitle")= show.title
           form(action=`/showShelves/${showShelf.id}/shows/${show.id}` method='post' class="showShelfDeleteForm")
@@ -20,3 +21,4 @@ block content
             each shelf in shelves
               option(value=shelf.id class="showShelfOption")= shelf.title
           button(type="click" class="showShelfSubmit" value=user.id id=show.id) Add to Shelf
+          a(style="visibility: hidden" id="itemAdded") Added to ShowShelf!

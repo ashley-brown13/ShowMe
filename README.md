@@ -80,6 +80,7 @@ This was the first time, I have worked on an application starting from the desig
 
 The problems that I, Mauro Sanchez, encountered was that I had difficulty at the beginning with making api calls in the same application without having two servers one for the api and the other for the front end, but once I figure this out, it made working in our application easier.
 
+Sean Rader: The biggest issue that I faced all week personally was using CSS to style the review and show pages. It definitely is not a strength of mine, and it took a lot of reading through old notes, readings, and MDN.
 
 ## Instructions
 After cloning the repository to your local machine, follow the instructions below to start the app:
