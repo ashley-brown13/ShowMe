@@ -56,7 +56,7 @@ router.post('/search', asyncHandler (async (req, res) => {
         const showInfo = await fetch(`https://imdb8.p.rapidapi.com/title/get-overview-details?tconst=${ttId}&currentCountry=US`, {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "5371c89e15msh892bf57b9b82a37p1dcbc6jsn908656f4cc70",
+                "x-rapidapi-key": `${process.env.API_SHOW_KEY}`,
                 "x-rapidapi-host": "imdb8.p.rapidapi.com"
             }
         });
