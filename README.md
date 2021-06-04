@@ -1,3 +1,4 @@
+![banner](https://github.com/ashley-brown13/ShowMe/blob/main/public/images/ShowMeBanner.png?raw=true)
 # ShowMe
 
 ShowMe is a website that allows all users to view ratings, reviews, and basic information about TV shows. If a user creates an account with ShowMe they are able to store lists of shows, called ShowShelves. There are three empty ShowShelves provided when a user signs up--Want to watch, Watching, and Watched--but users are able to create, name, and delete additional ShowShelves.
