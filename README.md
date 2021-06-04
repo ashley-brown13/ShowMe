@@ -83,7 +83,7 @@ The problems that I, Mauro Sanchez, encountered was that I had difficulty at the
 Sean Rader: The biggest issue that I faced all week personally was using CSS to style the review and show pages. It definitely is not a strength of mine, and it took a lot of reading through old notes, readings, and MDN.
 
 
-Savannah Rice: The biggest challenge I faced was setting up the API route to add a movie from the index page to a user's showshelf. It was challenging to get all the pieces (Pug, API route, etc.) to connect properly, however I learned a lot and am very happy with the result. 
+Savannah Rice: The biggest challenge I faced was setting up the API route to add a movie from the index page to a user's showshelf. It was challenging to get all the pieces (Pug, API route, etc.) to connect properly, however I learned a lot and am very happy with the result.
 
 Heba Elkasaby: The challenges I faced:
                                       1- impelmenting the lougout button, at the beginning I coded it as an anchor element, but it didn't work and was still show me as I am logged in. It took me time to be able to code it as a form with method 'post'.
@@ -91,4 +91,14 @@ Heba Elkasaby: The challenges I faced:
 
 For me, Ashley Brown, the biggest challenge for me was understanding how to connect all the portions of the project together when we needed to use an API route. Once I figured out how all of the parts connected, it was simpler to understand how the project works as a whole from the ground up.
 
+## Instructions
+After cloning the repository to your local machine, follow the instructions below to start the app:
 
+>1. `npm install` to intall all dependencies for the app.
+>2. Make a .env file with the .env.excample file information, change password and secret placeholder values.
+>3. Create the user role in psql with `CREATEDB` attribute.
+>4. `npx dotenv sequelize db:create`
+>5. `npx dotenv sequelize db:migrate`
+>6. `npx dotenv sequelize db:seed:all`
+>7. `npm start` to run the app
+>>* The app is running on port: `8080`
