@@ -4,6 +4,7 @@ html
       block head
         link(rel='stylesheet' href='/stylesheets/reset.css')
         link(rel='stylesheet' href='/stylesheets/navBar.css')
+        script(src="https://kit.fontawesome.com/5396543830.js" crossorigin="anonymous")
         //- script(src='/javascripts/search.js' type='module')
         title ShowMe - #{title}
   body
@@ -22,7 +23,45 @@ html
               a(href='/showshelves' class='myShowShelf') My ShowShelves
             form(method='post' action='/users/logout' class='logout-form')
               button(type='submit' class='logout-button') Logout
-          else 
+          else
             a(href='/users/login' class='login') Login
             a(href='/users/signup' class='signup') Signup
     block content
+    footer
+        div(class='footer')
+            div(class='ind-links')
+                a(href="https://nm15-vge.github.io/" target="_blank") Mauro Sanchez
+                div(class='github-linkedin')
+                    a(href="www.linkedin.com/in/mauro-sanchez-a3220a20b" target="_blank")
+                        i(class="fab fa-linkedin")
+                    a(href="https://github.com/nM15-vge" target="_blank")
+                        i(class="fab fa-github")
+            div(class='ind-links')
+                a(href="https://heba11-22.github.io/" target="_blank") Heba Elkasaby
+                div(class='github-linkedin')
+                    a(href="https://www.linkedin.com/in/heba-e-3091261b5/" target="_blank")
+                        i(class="fab fa-linkedin")
+                    a(href="https://github.com/Heba11-22" target="_blank")
+                        i(class="fab fa-github")
+            div(class='ind-links')
+                a(href="https://savannahrice.github.io/" target="_blank") Savannah Rice
+                div(class='github-linkedin')
+                    a(href="https://www.linkedin.com/in/savannah-rice/" target="_blank")
+                        i(class="fab fa-linkedin")
+                    a(href="https://github.com/SavannahRice" target="_blank")
+                        i(class="fab fa-github")
+            div(class='ind-links')
+                a(href="" target="_blank") Sean Rader
+                div(class='github-linkedin')
+                    a(href="https://www.linkedin.com/in/sean-rader-9ba95850/" target="_blank")
+                        i(class="fab fa-linkedin")
+                    a(href="https://github.com/sjrader" target="_blank")
+                        i(class="fab fa-github")
+            div(class='ind-links')
+                a(href="https://ashley-brown13.github.io/" target="_blank") Ashley Brown
+                div(class='github-linkedin')
+                    a(href="https://www.linkedin.com/in/ashleybrown121389/" target="_blank")
+                        i(class="fab fa-linkedin")
+                    a(href="https://github.com/ashley-brown13" target="_blank")
+                        i(class="fab fa-github")
+            p(class="copyright") &copy; 2021 The Vikings

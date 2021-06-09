@@ -53,3 +53,31 @@ h3 {
 .edit-review, .delete-review {
     margin: 10px;
 }
+
+.fab {
+    font-size: 40px;
+    background-color: #E2DCCF;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E2DCCF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+.ind-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.github-linkedin {
+    display:flex;
+    justify-content: space-around;
+}
+
+.copyright {
+    background-color: #E2DCCF
+}
