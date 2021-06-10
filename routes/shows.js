@@ -27,7 +27,6 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
     let ratingObj = (await db.Rating.findOne({where: {showId: req.params.id, userId: loggedUser}}));
     rating[show.id] = ratingObj ? ratingObj.rating: 0
   };
-  console.log(rating);
   res.render('show', {title: show.title, show, reviews, user, shelves, avgRating, userReview, rating})
 }))
 
