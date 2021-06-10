@@ -14,9 +14,46 @@ mixin validationErrorSummary(errors)
 mixin stars(showId)
      p(class="background") Rate Show:
         div(class="container-stars" id=showId)
-          a(href="" class="star off" title="Not great" id=1) 1 of 5
-          a(href="" class="star off" title="Not bad" id=2) 2 0f 5
-          a(href="" class="star off" title="Ok" id=3) 3 of 5
-          a(href="" class="star off" title="Like it" id=4) 4 of 5
-          a(href="" class="star off" title="Amazing" id=5) 5 0f 5
+            //- case rating
+            //-     when 1
+            //-         a(href="" class="star on" title="Not great" id=1) 1 of 5
+            //-         a(href="" class="star off" title="Not bad" id=2) 2 of 5
+            //-         a(href="" class="star off" title="Ok" id=3) 3 of 5
+            //-         a(href="" class="star off" title="Like it" id=4) 4 of 5
+            //-         a(href="" class="star off" title="Amazing" id=5) 5 of 5
+            //-     when 2
+            //-         a(href="" class="star on" title="Not great" id=1) 1 of 5
+            //-         a(href="" class="star on" title="Not bad" id=2) 2 of 5
+            //-         a(href="" class="star off" title="Ok" id=3) 3 of 5
+            //-         a(href="" class="star off" title="Like it" id=4) 4 of 5
+            //-         a(href="" class="star off" title="Amazing" id=5) 5 of 5
+            //-     when 3
+            //-         a(href="" class="star on" title="Not great" id=1) 1 of 5
+            //-         a(href="" class="star on" title="Not bad" id=2) 2 of 5
+            //-         a(href="" class="star on" title="Ok" id=3) 3 of 5
+            //-         a(href="" class="star off" title="Like it" id=4) 4 of 5
+            //-         a(href="" class="star off" title="Amazing" id=5) 5 of 5
+            //-     when 4
+            //-         a(href="" class="star on" title="Not great" id=1) 1 of 5
+            //-         a(href="" class="star on" title="Not bad" id=2) 2 of 5
+            //-         a(href="" class="star on" title="Ok" id=3) 3 of 5
+            //-         a(href="" class="star on" title="Like it" id=4) 4 of 5
+            //-         a(href="" class="star off" title="Amazing" id=5) 5 of 5
+            //-     when 5
+            //-         a(href="" class="star on" title="Not great" id=1) 1 of 5
+            //-         a(href="" class="star on" title="Not bad" id=2) 2 of 5
+            //-         a(href="" class="star on" title="Ok" id=3) 3 of 5
+            //-         a(href="" class="star on" title="Like it" id=4) 4 of 5
+            //-         a(href="" class="star on" title="Amazing" id=5) 5 of 5
+            //-     default
+            //-         a(href="" class="star off" title="Not great" id=1) 1 of 5
+            //-         a(href="" class="star off" title="Not bad" id=2) 2 of 5
+            //-         a(href="" class="star off" title="Ok" id=3) 3 of 5
+            //-         a(href="" class="star off" title="Like it" id=4) 4 of 5
+            //-         a(href="" class="star off" title="Amazing" id=5) 5 of 5
+            a(href="" class="star off" title="Not great" id=showId+"1") 1 of 5
+            a(href="" class="star off" title="Not bad" id=showId+"2") 2 of 5
+            a(href="" class="star off" title="Ok" id=showId+"3") 3 of 5
+            a(href="" class="star off" title="Like it" id=showId+"4") 4 of 5
+            a(href="" class="star off" title="Amazing" id=showId+"5") 5 of 5
         p(id=`rating${showId}`)
