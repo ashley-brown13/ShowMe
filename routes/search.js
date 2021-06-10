@@ -62,10 +62,10 @@ router.post('/search', asyncHandler (async (req, res) => {
         });
 
         const info = await showInfo.json();
-        const synopsis = info.plotSummary.text;
-        const title = info.title.title;
-        const imageURL = info.title.image.url;
-        const yearReleased = info.title.seriesStartYear;
+        const synopsis = info.plotSummary ? info.plotSummary.text: "";
+        const title = info.title? info.title.title: "";
+        const imageURL = infor.title? info.title.image.url: "";
+        const yearReleased = infor.title? info.title.seriesStartYear: "";
         const genre = info.genres[0];
 
         const youtubeVideo = await fetch(

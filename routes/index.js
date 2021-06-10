@@ -10,23 +10,29 @@ const { Sequelize } = require('sequelize');
 
 /* GET home page. */
 router.get('/', asyncHandler(async(req, res) => {
-  const shows = await db.Show.findAll({
+  let shows = await db.Show.findAll({
     order: [[ Sequelize.fn('RANDOM')]],
     limit: 12
   });
 
   //Encounter.findAll({ order: Sequelize.literal('rand()'), limit: 5 }).then((encounters)
-
-let user = null;
-let shelves;
-if (req.session.auth){
-  const loggedUser = req.session.auth.userId;
-  user = await db.User.findByPk(loggedUser)
-  shelves = await db.ShowShelf.findAll({
-    where: { userId: loggedUser }
-})}
-  res.render('index', { title: 'ShowMe', shows , user, shelves});
-}))
+  let user = null;
+  let shelves;
+  let ratings = {}
+  if(req.session.auth){
+    const loggedUser = req.session.auth.userId;
+    user = await db.User.findByPk(loggedUser)
+    shelves = await db.ShowShelf.findAll({
+      where: { userId: loggedUser }
+    });
+    for(let i = 0; i< shows.length; i ++){
+      let show = shows[i];
+      let rating = await db.Rating.findOne({where: {userId: user.id, showId: show.id}}).rating;
+      ratings[show.id] = rating ? rating : 0
+    };
+  }
+  res.render('index', { title: 'ShowMe', shows , user, shelves, ratings});
+}));
 
 
 
