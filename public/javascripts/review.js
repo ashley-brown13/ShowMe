@@ -29,14 +29,14 @@ updateForm.addEventListener('submit', async(e) => {
       method: 'PATCH',
       body: JSON.stringify(body),
       headers: {'Content-Type': 'application/json'}
-    })
+    });
+    await res.json()
     // need to come back and finish error handling section
     // if(res.success !== 'success'){
     //   throw res
     // }
-    window.location.href = `/shows/${showId}`
+   window.location.href = `/shows/${showId}`
   }catch(e) {
     console.error(e)
   }
-
 });

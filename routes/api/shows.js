@@ -17,14 +17,14 @@ router.delete('/api/reviews/:id(\\d+)', asyncHandler(async (req, res, next) => {
   }
 }));
 
-router.patch('/api/reviews/:id(\\d+)', asyncHandler(async (req, res, next) => {
+router.patch('/api/reviews/:id(\\d+)/', asyncHandler(async (req, res, next) => {
   const {title , comment} = req.body;
   const review = await db.Review.findByPk(req.params.id);
   if(review){
-    review.update({title, comment})
-    res.json({success: 'success'})
+    await review.update({title, comment})
+    return res.send({success: 'success'})
   }else{
-    next(error)
+    return next(error)
   }
 
 }))
