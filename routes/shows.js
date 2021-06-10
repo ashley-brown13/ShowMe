@@ -16,14 +16,19 @@ router.get('/shows/:id(\\d+)', asyncHandler(async(req, res) => {
   let userReview;
   let user = null;
   let shelves;
+  let rating = {};
   if (req.session.auth){
     const loggedUser = req.session.auth.userId;
     userReview = await db.Review.findOne({where: {showId: req.params.id, userId: loggedUser}})
     user = await db.User.findByPk(loggedUser)
     shelves = await db.ShowShelf.findAll({
     where: { userId: loggedUser }
-  })}
-  res.render('show', {title: show.title, show, reviews, user, shelves, avgRating, userReview})
+    });
+    let ratingObj = (await db.Rating.findOne({where: {showId: req.params.id, userId: loggedUser}}));
+    rating[show.id] = ratingObj ? ratingObj.rating: 0
+  };
+  console.log(rating);
+  res.render('show', {title: show.title, show, reviews, user, shelves, avgRating, userReview, rating})
 }))
 
 router.get('/shows/:id(\\d+)/reviews', csrfProtection, asyncHandler(async (req, res) => {

@@ -9,7 +9,7 @@ block content
     div(class="showImage")
       img(src=show.imageURL class="img")
       if user
-        +stars(show.id)
+        +stars(show.id, rating[show.id])
         select(name="showShelves" class="showShelfSelect")
           each shelf in shelves
             option(value=shelf.id class="showShelfOption" )= shelf.title
