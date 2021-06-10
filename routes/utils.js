@@ -10,7 +10,7 @@ const ratings = async(showId) => {
   let totalRating = 0
   ratings.forEach(rating => totalRating += rating.rating )
   const avgRating = Number.parseFloat(totalRating/ratings.length).toFixed(2)
-  return avgRating
+  return isNaN(avgRating) ? 0 : avgRating
 }
 
 module.exports = {

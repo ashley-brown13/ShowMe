@@ -9,10 +9,10 @@ router.post('/api/shows/:id/ratings', asyncHandler(async(req, res) => {
   const userRating = await db.Rating.findOne({where: {showId: req.params.id, userId }})
   const {ratingValue} = req.body
   if(userRating){
-    await userRating.update({rating: ratingValue});
+    await userRating.update({rating: ratingValue[ratingValue.length-1]});
     return res.json({updated: 'updated'})
   }else {
-    await db.Rating.create({rating: ratingValue, userId, showId: req.params.id});
+    await db.Rating.create({rating: ratingValue[ratingValue.length-1], userId, showId: req.params.id});
     res.json({created: 'created'})
   }
 }));
