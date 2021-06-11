@@ -81,3 +81,9 @@ h3 {
 .copyright {
     background-color: #E2DCCF
 }
+
+footer {
+    position: relative;
+    bottom:0;
+    width:100%;   /* Height of the footer */
+ }

@@ -4,6 +4,9 @@ html
       block head
         link(rel='stylesheet' href='/stylesheets/reset.css')
         link(rel='stylesheet' href='/stylesheets/navBar.css')
+        meta(name="title" property="og:title" content="ShowMe")
+        meta(property="og:type" content="Website")
+        meta(name="image" property="og:image" content="https://live.staticflickr.com/65535/51239685923_73bb67de1b_w.jpg")
         script(src="https://kit.fontawesome.com/5396543830.js" crossorigin="anonymous")
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         //- script(src='/javascripts/search.js' type='module')
@@ -13,7 +16,7 @@ html
       div(class='navBar')
         div(class='navbar-left')
           div(class='logo')
-            a(href='/' class='show') 
+            a(href='/' class='show')
               span(class='show') Show
               span(class='me') Me
             //- a(href='/' class='me') Me
@@ -25,7 +28,7 @@ html
                 //- <i class="fa-solid fa-magnifying-glass"></i>
                 //- span(class='material-icons-outlined') search
                 //- md-icon(class="material-icons-outlined")
-          
+
 
 
               //- button(type='submit' id='search-btn' class='search') Search
